@@ -1,0 +1,41 @@
+a, p, ln, h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman";
+	color: black;
+	font-style: normal;
+}
+
+body {
+	background-color: #faa307;
+}
+
+#outerSquare {
+	position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+	border: 1px solid black;
+	padding: 15px;
+	display: inline-block;
+	background-color: #000000;
+	text-align: center;
+}
+
+#innerSquare {
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	background-color: #ffba08;
+	padding-top: 100px;
+}
+
+p {
+	font-size: 22px;
+}
+
+#pBar {
+	width: 0%;
+	transition: width 4s;
+}
