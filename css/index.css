@@ -1,0 +1,27 @@
+body {
+	text-align: center;
+	background-image: url("../images/home/homeBackgroundMain.jpg");
+	background-repeat: repeat;
+}
+
+.jumbotron {
+
+	background-image: url("../images/home/homeBackgroundJumbotron.gif");
+}
+
+.jumbotron h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.jumbotron p {
+	color: white;
+}
+
+.itemParagraph {
+	display: none;
+}
+
+.item {
+	margin: 5px;
+}

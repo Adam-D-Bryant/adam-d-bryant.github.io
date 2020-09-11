@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+	background-image: url("../images/clothes/clothesBackgroundMain.jpg");
+	background-repeat: repeat;
+}
+
+.jumbotron {
+	background-color: #000000;
+	background-image: url("../images/clothes/clothesBackgroundJumbotron.gif");
+	background-repeat: repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.jumbotron h2 {
+	color: black;
+	font-weight: bold;
+}
+
+.jumbotron p {
+	color: black;
+}
