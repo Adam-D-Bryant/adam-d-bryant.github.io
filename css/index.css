@@ -25,3 +25,14 @@ body {
 .item {
 	margin: 5px;
 }
+
+#christmasTime, #christmasDate {
+	display: inline;
+	border: 2px solid white;
+	font-weight: bold;
+	background-color: red;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0px;
+	height: auto;
+}
