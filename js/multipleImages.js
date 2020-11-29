@@ -1,9 +1,11 @@
 images = 
 [
 	["../images/games/laytonMystery.jpg", "../images/games/laytonMystery2.jpg", "../images/games/laytonMystery3.jpg"],
+	["../images/games/ageOfCalamity.jpg", "../images/games/ageOfCalamity2.jpg", "../images/games/ageOfCalamity3.jpg"],
 	["../images/food/ferrero.jpg", "../images/food/milkyBar.jpg"],
 	["../images/food/crunchyNut.jpg", "../images/food/frootLoops.jpg", "../images/food/sultanaBran.jpg", 
 	"../images/food/nutrigrain.jpg", "../images/food/cocoPops.jpg"],
+	["../images/food/rockCandy.jpg", "../images/food/sherbet.jpg", "../images/food/lollipops.jpg"],
 	["../images/misc/cash.jpg", "../images/misc/visa.jpg"]
 ]
 

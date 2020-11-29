@@ -9,16 +9,20 @@ $(window).on("load", function() {
 		var hours = Math.floor(Math.abs(((cur.getTime() - xmas.getTime()) / (1000 * 3600)))) % 24;
 	    var days = Math.floor(Math.abs(((cur.getTime() - xmas.getTime()) / (1000 * 3600 * 24))));
 
-		if (days < 1 || cur.getTime() > xmas.getTime()){
-			$("#christmasDate").html("Merry Christmas!");
+		if (days <= 0 || cur.getTime() > xmas.getTime()){
+			$("#christmasDate").hide();
+			$("#christmasTime").html("Merry Christmas!");
 		}
 		else {
-			var txt = "Time until Christmas: ";
-			txt += (days + " day" + (days != 1 ? "s":"") + ", ");
-			txt += (hours + " hour" + (hours != 1 ? "s":"") + ", ");
-			txt += (minutes + " minute" + (minutes != 1 ? "s":"") + " and ");
-			txt += (seconds + " second" + (seconds != 1 ? "s":"") + "!");
-			$("#christmasDate").html(txt);
+			if (days < 10) { days = "0" + days; }
+			if (hours < 10) { hours = "0" + hours; }
+			if (minutes < 10) { minutes = "0" + minutes; }
+			if (seconds < 10) { seconds = "0" + seconds; }
+
+			var txt = "Tick";
+			if (seconds % 2 == 0) { txt = "Tock"; }
+			$("#christmasDate").html("Christmas is near... ");
+			$("#christmasTime").html(days+" : "+hours+" : "+minutes+" : "+seconds);
 		}
 	}
 
