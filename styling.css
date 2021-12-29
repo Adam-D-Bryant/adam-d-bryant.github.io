@@ -1,0 +1,31 @@
+body, h1 {
+  font-family: Brush Script MT, sans-serif;
+}
+
+body, html {
+  height: 100%
+}
+
+.bgrImg {
+  background-image: url('bgrImg.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#mainTitle {
+  font-family: Lucida Handwriting, sans-serif;
+  font-size: 50px;
+  color: #BBBBBB;
+  background-color: #444444BB;
+}
+
+#subText, #subText2 {
+  font-family: Lucida Handwriting, sans-serif;
+  font-size: 25px;
+  color: #BBBBBB;
+}
+
+#credit {
+	color: #BBBBBB;
+}
