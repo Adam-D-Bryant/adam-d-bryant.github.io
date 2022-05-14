@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>MISC.</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/misc.css">
+	</head>
+	<body>
+		<div id="navbar">
+			<li class="navbarItem"><a>BIRTHDAY WISHLIST <span id="timeUntilTimer"></span></a></li>
+			<li id="navbarDropDownButton"><a href="#" id="navbarDropDownBtnA">. . .</a></li>
+			<div id="navbarNormalSet">
+				<li class="navbarBtn"><a href="videogames.html">VIDEO GAMES</a></li>
+				<li class="navbarBtn" id="navbarBtnActive"><a href="misc.html">MISC.</a></li>
+				<li class="navbarBtn"><a href="food.html">FOOD</a></li>
+				<li class="navbarBtn"><a href="clothes.html">CLOTHES</a></li>
+				<li class="navbarBtn"><a href="index.html">HOME PAGE</a></li>
+			</div>
+		</div>
+		<div id="navbarMobile" class="navbarMobileHide">
+			<a href="index.html"><li class="navbarBtnM">HOME PAGE</li></a>
+			<a href="clothes.html"><li class="navbarBtnM">CLOTHES</li></a>
+			<a href="food.html"><li class="navbarBtnM">FOOD</li></a>
+			<a href="misc.html"><li class="navbarBtnM" id="navbarBtnMActive">MISC.</li></a>
+			<a href="videogames.html"><li class="navbarBtnM">VIDEO GAMES</li></a>
+		</div>
+
+		<div id="titleArea">
+			<p id="mainTitle">MISC.</p>
+			<p id="subTitle">To be used.</p>
+		</div>
+
+		<div id="mainArea">
+
+			<div class="row">
+				<div class="col-5">
+					<div class="item">
+						<p class="itemHeading">TELESCOPE</p>
+						<p class="itemDesc">Not necessarily this one; any will do.</p>
+						<img class="itemImg" src="img/telescope.jpg" alt="ITEM IMG MISSING"/><br/>
+					</div>
+				</div>
+				<div class="col-7 blankSpace"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-7 blankSpace"></div>
+				<div class="col-5">
+					<div class="item">
+						<p class="itemHeading">MICROSCOPE</p>
+						<p class="itemDesc">Like a telescope, but it points downwards.</p>
+						<img class="itemImg" src="img/microscope.jpg" alt="ITEM IMG MISSING"/><br/>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+	<script src="js/timeUntilDay.js"></script>
+	<script src="js/navbarMenuPopup.js"></script>
+</html>

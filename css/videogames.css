@@ -1,0 +1,70 @@
+body {
+	background-image: URL("../img/videogameBackground.jpg");
+	background-repeat: repeat;
+}
+
+h1, h3, p {
+	font-family: "Goudy Old Style", "Courier";
+}
+
+p {
+	margin-bottom: 0px;
+	font-size: 24px;
+}
+
+#titleArea {
+	text-align: center;
+	background-color: rgba(128,128,128,0.75);
+	margin-top: 96px;
+}
+
+#mainTitle {
+	font-size: 72px;
+	color: white;
+}
+
+#subTitle {
+	font-size: 48px;
+	color: white;
+}
+
+#mainArea {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.item {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	width: 40%;
+	background-color: rgba(220, 220, 220, 1);
+	clear: both;
+}
+
+.rightItem {
+	float: right;
+}
+
+.itemImg {
+	width: inherit;
+	height: inherit;
+}
+
+.itemHeading {
+	background-color: rgba(150, 150, 150, 1);
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+.itemDesc {
+	background-color: rgba(180, 180, 180, 1);
+	margin: 0px;
+	padding: 10px;
+}
+
+.itemLink {
+	text-decoration: none;
+	color: #2222FF;
+}
