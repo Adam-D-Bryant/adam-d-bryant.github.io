@@ -7,7 +7,7 @@ function updateTimer() {
 	secDiff = Math.ceil(timeDiff/1000) % 60;
 	minDiff = Math.ceil(timeDiff/(1000*60)) % 60;
 	hourDiff = Math.ceil(timeDiff/(1000*60*60)) % 24;
-	dayDiff = Math.ceil(timeDiff/(1000*60*60*24));					//CEIL OR FLOOR?
+	dayDiff = Math.floor(timeDiff/(1000*60*60*24));					//CEIL OR FLOOR?
 
 	str = "";
 	str += dayDiff + ":";
