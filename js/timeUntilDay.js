@@ -4,10 +4,10 @@ function updateTimer() {
 	now = new Date();
 	day = new Date(2022, 7, 28);
 	timeDiff = day.getTime() - now.getTime();
-	secDiff = Math.ceil(timeDiff/1000) % 60;
-	minDiff = Math.ceil(timeDiff/(1000*60)) % 60;
-	hourDiff = Math.ceil(timeDiff/(1000*60*60)) % 24;
-	dayDiff = Math.floor(timeDiff/(1000*60*60*24));					//CEIL OR FLOOR?
+	secDiff = Math.floor(timeDiff/1000) % 60;
+	minDiff = Math.floor(timeDiff/(1000*60)) % 60;
+	hourDiff = Math.floor(timeDiff/(1000*60*60)) % 24;
+	dayDiff = Math.floor(timeDiff/(1000*60*60*24));
 
 	str = "";
 	str += dayDiff + ":";
