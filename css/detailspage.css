@@ -1,0 +1,74 @@
+#titleArea {
+    justify-content: center;
+    flex-direction: column; 
+    margin-top: 100px;
+}
+
+#bodyArea {
+    margin-top: 75px;
+}
+
+#title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Mountains of Christmas", cursive;
+    color: white;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.bodyItem {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Mountains of Christmas", cursive;
+    color: white; 
+    list-style: none;
+    border: 4px solid black;
+}
+
+.invItem {
+    border: 4px solid rgba(0,0,0,0);
+}
+
+.itemTitle {
+    background-color: rgb(202, 44, 44);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.itemDesc {
+    background-color: rgb(49, 170, 49);
+    border-bottom: 2px solid black;
+}
+
+.itemImg {
+    max-width: 100%;
+    float: left;
+}
+
+#empty {
+    flex: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Mountains of Christmas", cursive;
+    color: white;
+    background-color: rgba(0,0,0,0.45);
+}
+
+@media screen and (max-width: 800px) {
+    .bodyItem .invItem {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .invItem {
+        display: none;
+    }
+}
