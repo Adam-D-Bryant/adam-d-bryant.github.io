@@ -12,7 +12,6 @@ li {
 p {
     font-family: "Mountains of Christmas", cursive;
 }
-
 @media screen and (max-width: 900px) {
     .bodyItem {
         margin-left: 10%;
