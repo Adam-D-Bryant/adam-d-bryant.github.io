@@ -1,103 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Under Construction</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="utf-8"/>
+		<title>Birthday Wishlist 2023</title>
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+	</head>
+	<body>
 
-        <style>
-            .grid-container {
-              display: grid;
-              grid-template-columns: auto;
-              padding: 10px;
-            }
-            .grid-item {
-              padding: 20px;
-              font-size: 30px;
-              text-align: center;
-            }
+		<div class="grid-3" id="navbar">
+			<div id="navbarLeft">BIRTHDAY WISHLIST: HOME</div>
+			<div id="navbarCentre"></div>
+			<div id="navbarRight">
+				<a href="" class="navbarLink" id="navbarSelected"><div class="navbarItem">HOME</div></a>
+				<a href="clothes.html" class="navbarLink"><div class="navbarItem">CLOTHES</div></a>
+				<a href="food.html" class="navbarLink"><div class="navbarItem">FOOD</div></a>
+				<a href="games.html" class="navbarLink"><div class="navbarItem">GAMES</div></a>
+				<a href="misc.html" class="navbarLink"><div class="navbarItem">MISC.</div></a>
+			</div>
+		</div>
 
-            #titleArea {
-                margin-top: 75px;
-            }
+		<div class="grid-1" id="titleArea">
+			<div id="title"><h3>BIRTHDAY WISHLIST 2023</h3></div>
+			<div id="subTitle"><p>Let's explore!</p></div>
+		</div>
 
-            #bodyArea {
-                margin-top: 150px;
-            }
-
-            #title {
-                font-size: 46px;
-            }
-
-            body {
-                background-color: rgba(150, 150, 150, 255);
-            }
-        </style>
-    </head>
-    <body>
-        <div class="grid-container" id="titleArea">
-            <div class="grid-item" id="title">WISHLIST UNDER CONSTRUCTION</div>
-        </div> 
-        <div class="grid-container" id="bodyArea">
-            <div class="grid-item" id="subText">I'm still building this site...</div>
-        </div> 
-
-        <script>
-            num = 0
-            size = (getWidth()/20)-6;
-            dir = 1;
-            specTxts=["CODE", "PRESENTS", "MOCHA", "BUGS", "DUCKS", "SHIRTS", "FOOD"];
-            specTxtInd=0;
-            spd = Math.floor(1080/getWidth());
-            curSpd = spd;
- 
-
-            function upd() {
-
-                spd = Math.floor(1080/getWidth());
-                size=(getWidth()/20) - specTxts[specTxtInd].length - 2;
-
-                var txt = "";
-          
-
-                for(var i=0; i < num; i++) {
-                    txt += "_";
-                }
-                txt += "["+specTxts[specTxtInd]+"]";
-
-
-
-                for(var i=0; i < (size-num); i++) {
-                    txt += "_";
-                }
-
-                document.getElementById("subText").innerHTML = txt;
-
-                if (curSpd > 0) { curSpd--; }
-                else {
-                    curSpd = spd;
-                    num += dir;
-                    if (dir == 1 && num > size+1) {
-                        num = 0;
-                        specTxtInd++;
-                        if (specTxtInd >= specTxts.length) {
-                            specTxtInd=0;
-                        }
-                    }
-                }
-            }
-
-            function getWidth() {
-                return Math.max(
-                    document.body.scrollWidth,
-                    document.documentElement.scrollWidth,
-                    document.body.offsetWidth,
-                    document.documentElement.offsetWidth,
-                    document.documentElement.clientWidth
-                );
-            }
-
-            setInterval(upd, 50);
-        </script>
-    </body>
+		<div class="grid-1" id="slideShowArea">
+			<div class="grid-2">
+				<a id="slidePrev" onclick="shiftSlide(-1)">&#10094;</a>
+				<a id="slideNext" onclick="shiftSlide(1)">&#10095;</a>
+			</div>
+			<div class="grid-3" id="slidesArea">
+				<div id="slidesAreaLeft">
+					<a href="clothes.html" class="slidesLink"><div class="heading">CLOTHES</div></a>
+					<a href="food.html" class="slidesLink"><div class="heading">FOOD</div></a>
+					<a href="games.html" class="slidesLink"><div class="heading">GAMES</div></a>
+					<a href="misc.html" class="slidesLink"><div class="heading">MISC.</div></a>
+					<a href="clothes.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailClothes.jpg" alt="MISSING IMG"/></div></a>
+					<a href="food.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailFood.jpg" alt="MISSING IMG"/></div></a>
+					<a href="games.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailGames.jpg" alt="MISSING IMG"/></div></a>
+					<a href="misc.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailMisc.jpg" alt="MISSING IMG"/></div></a>
+				</div>
+				<div class="grid-1" id="slidePrevMobCont"><a id="slidePrevMob" onclick="shiftSlide(-1)">&#10094;</a></div>
+				<div id="slidesAreaMiddle">
+					<a href="clothes.html" class="slidesLink"><div class="heading">CLOTHES</div></a>
+					<a href="food.html" class="slidesLink"><div class="heading">FOOD</div></a>
+					<a href="games.html" class="slidesLink"><div class="heading">GAMES</div></a>
+					<a href="misc.html" class="slidesLink"><div class="heading">MISC.</div></a>
+					<a href="clothes.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailClothes.jpg" alt="MISSING IMG"/></div></a>
+					<a href="food.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailFood.jpg" alt="MISSING IMG"/></div></a>
+					<a href="games.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailGames.jpg" alt="MISSING IMG"/></div></a>
+					<a href="misc.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailMisc.jpg" alt="MISSING IMG"/></div></a>
+				</div>
+				<div class="grid-1" id="slideNextMobCont"><a id="slideNextMob" onclick="shiftSlide(1)">&#10095;</a></div>
+				<div id="slidesAreaRight">
+					<a href="clothes.html" class="slidesLink"><div class="heading">CLOTHES</div></a>
+					<a href="food.html" class="slidesLink"><div class="heading">FOOD</div></a>
+					<a href="games.html" class="slidesLink"><div class="heading">GAMES</div></a>
+					<a href="misc.html" class="slidesLink"><div class="heading">MISC.</div></a>
+					<a href="clothes.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailClothes.jpg" alt="MISSING IMG"/></div></a>
+					<a href="food.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailFood.jpg" alt="MISSING IMG"/></div></a>
+					<a href="games.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailGames.jpg" alt="MISSING IMG"/></div></a>
+					<a href="misc.html" class="slidesLink"><div class="slides"><img class="slideImage" src="img/thumbnailMisc.jpg" alt="MISSING IMG"/></div></a>
+				</div>
+			</div>
+		</div>
+		<script src="js/homepage.js"></script>
+	</body>
 </html>

@@ -1,0 +1,133 @@
+body {
+    background-image: url("../img/backgroundHome.jpg");
+    margin: 0px;
+}
+
+#titleArea {
+    background-color: rgba(200, 200, 200, 0.75);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 125px;
+}
+
+#slideShowArea {
+    justify-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#slidesArea {
+    width: 80%;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+
+.slides {
+    display: none;
+    border: none;
+}
+
+#title {
+    text-align: center;
+    font-size: 32px;
+}
+
+#subTitle {
+    text-align: center;
+    font-size: 24px;
+}
+
+.slideImage {
+    width: 100%;
+}
+
+#slidesAreaLeft, #slidesAreaRight, #slidesAreaMiddle {
+    background-color: white;
+    margin: 20px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.heading {
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+    display: none;
+}
+
+#slidesAreaLeft , #slidesAreaRight  {
+    opacity: 50%;
+}
+
+#slidePrev, #slidePrevMob {
+    background-color: rgba(200,200,200,0.75);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#slideNext, #slideNextMob {
+    background-color: rgba(200,200,200,0.75);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#slideNext {
+    margin-left: 100px;
+}
+
+#slidePrevMob, #slideNextMob { 
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    justify-self: center;
+}
+
+#slidePrevMobCont {
+    display: none;
+    width: 100%;
+    grid-column: auto;
+ 
+}
+
+#slideNextMobCont {
+    display: none;
+}
+
+.slidesLink {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 900px) {
+
+    #slidesArea {
+        grid-template-columns: 10% 80% 10%;
+        justify-content: center;
+    }
+
+    #slidesAreaLeft {
+        display: none;
+    }
+    #slidesAreaRight {
+        display: none;
+    }
+
+    #slidesAreaMiddle {
+        justify-content: center;
+        
+    }
+
+    .slides {
+        display: block;
+    }
+
+    #slidePrev, #slideNext {
+        display: none;
+    }
+
+    #slidePrevMobCont, #slideNextMobCont {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+}

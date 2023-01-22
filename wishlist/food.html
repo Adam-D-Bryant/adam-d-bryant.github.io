@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="utf-8"/>
+		<title>Birthday Wishlist 2023</title>
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/food.css">
+	</head>
+	<body>
+
+		<div class="grid-3" id="navbar">
+			<div id="navbarLeft">BIRTHDAY WISHLIST: FOOD</div>
+			<div id="navbarCentre"></div>
+			<div id="navbarRight">
+				<a href="index.html" class="navbarLink"><div class="navbarItem">HOME</div></a>
+				<a href="clothes.html" class="navbarLink"><div class="navbarItem">CLOTHES</div></a>
+				<a href="" class="navbarLink" id="navbarSelected"><div class="navbarItem">FOOD</div></a>
+				<a href="games.html" class="navbarLink"><div class="navbarItem">GAMES</div></a>
+				<a href="misc.html" class="navbarLink"><div class="navbarItem">MISC.</div></a>
+			</div>
+		</div>
+
+		<div class="grid-1" id="titleArea">
+			<div id="title"><h3>FOOD</h3></div>
+			<div id="subTitle"><p>Nom!</p></div>
+		</div>
+
+		<div class="grid-1" id="bodyArea">
+
+
+			<div class="grid-2 item left">
+				<div class="itemMain grid-1">
+					<div class="itemTitle">CHOCOLATE</div>
+					<div class="itemImg"><img src="img/foodChocolate.jpg" alt="IMG MISSING"/></div>
+					<div class="itemBtn" onclick="toggleDesc(0, false)">MORE DETAILS</div>
+				</div>
+				<div class="itemDesc">
+					<p>Pretty much any chocolate is fine, but these are really good:</p>
+					<ul>
+						<li>Ferrero Rocher</li>
+						<li>White Chocolate</li>
+						<li>Smarties</li>
+						<li>MnMs</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="grid-1 itemMob">
+				<div class="itemMain grid-1">
+					<div class="itemTitle">CHOCOLATE</div>
+					<div class="itemDesc">
+						<p>Pretty much any chocolate is fine, but these are really good:</p>
+						<ul>
+							<li>Ferrero Rocher</li>
+							<li>White Chocolate</li>
+							<li>Smarties</li>
+							<li>MnMs</li>
+						</ul>
+					</div>
+					<div class="itemImg"><img src="img/foodChocolate.jpg" alt="IMG MISSING"/></div>
+					<div class="itemBtn" onclick="toggleDesc(1, true)">MORE DETAILS</div>
+				</div>	
+			</div>
+
+			<div class="grid-3 item right">
+				<div class="spacer"></div>
+				<div class="itemDesc">
+					<p>Pretty much any lollies are fine, but these are really good:</p>
+					<ul>
+						<li>Killer Pythons</li>
+						<li>Jelly Beans</li>
+						<li>Skittles</li>
+						<li>Tic Tacs</li>
+					</ul>
+				</div>
+				<div class="itemMain grid-1">
+					<div class="itemTitle">LOLLIES</div>
+					<div class="itemImg"><img src="img/foodLollies.jpg" alt="IMG MISSING"/></div>
+					<div class="itemBtn" onclick="toggleDesc(2, false)">MORE DETAILS</div>
+				</div>
+			</div>
+
+			<div class="grid-1 itemMob">
+				<div class="itemMain grid-1">
+					<div class="itemTitle">LOLLIES</div>
+					<div class="itemDesc">
+						<p>Pretty much any lollies are fine, but these are really good:</p>
+						<ul>
+							<li>Killer Pythons</li>
+							<li>Jelly Beans</li>
+							<li>Skittles</li>
+							<li>Tic Tacs</li>
+						</ul>
+					</div>
+					<div class="itemImg"><img src="img/foodLollies.jpg" alt="IMG MISSING"/></div>
+					<div class="itemBtn" onclick="toggleDesc(3, true)">MORE DETAILS</div>
+				</div>	
+			</div>
+
+
+			<div class="grid-2 item left">
+				<div class="itemMain grid-1">
+					<div class="itemTitle">CEREAL</div>
+					<div class="itemImg"><img src="img/foodCereal.jpg" alt="IMG MISSING"/></div>
+					<div class="itemBtn" onclick="toggleDesc(4, false)">MORE DETAILS</div>
+				</div>
+				<div class="itemDesc">
+					<p>Pretty much any cereal is fine, but these are really good:</p>
+					<ul>
+						<li>Crunchy Nut</li>
+						<li>Sultana Bran</li>
+						<li>Froot Loops</li>
+						<li>Coco Pops</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="grid-1 itemMob">
+				<div class="itemMain grid-1">
+					<div class="itemTitle">CEREAL</div>
+					<div class="itemDesc">
+						<p>Pretty much any cereal is fine, but these are really good:</p>
+						<ul>
+							<li>Crunchy Nut</li>
+							<li>Sultana Bran</li>
+							<li>Froot Loops</li>
+							<li>Coco Pops</li>
+						</ul>
+					</div>
+					<div class="itemImg"><img src="img/foodCereal.jpg" alt="IMG MISSING"/></div>
+					<div class="itemBtn" onclick="toggleDesc(5, true)">MORE DETAILS</div>
+				</div>	
+			</div>
+
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
