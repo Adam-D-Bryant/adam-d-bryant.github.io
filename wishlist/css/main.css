@@ -72,6 +72,7 @@
     text-align: center;
     font-weight: bold;
     border-top: 1px solid black;
+    cursor: pointer;
 }
 
 .itemMain {
@@ -97,6 +98,11 @@
 #subTitle {
     text-align: center;
     font-size: 24px;
+}
+
+.itemLink {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 900px) {
