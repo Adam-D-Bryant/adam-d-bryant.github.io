@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>PIZZA TIME</title>
+
+        <style>
+
+            body {
+                background-image: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), URL("pizzaBackground.jpg");
+            }
+            #title, .list, .listTitle {
+                text-align: center;
+            }
+
+            #title {
+                font-size: 36px;
+                font-family: 'Courier New', Courier, monospace;
+                color: black;
+            }
+            .listTitle {
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                margin-top: 75px;
+                color: black;
+            }
+
+            li {
+                color: black;
+                font-size: 18px;
+            }
+        </style>
+        <script>
+            function spin() {
+                let spinEl = document.getElementsByClassName("spin");
+                for (let i=0; i < spinEl.length; i++) {
+                    let el = spinEl[i];
+                    let inner = el.innerHTML;
+                    let newInner;
+                    switch(inner) {
+                        case "—": newInner = "\\"; break;
+                        case "\\": newInner = "|"; break;
+                        case "|": newInner = "/"; break;
+                        case "/": newInner = "—"; break;
+                        default: "—"; break;
+                    }
+                    el.innerHTML = newInner;
+                }
+            }
+            function loaded() {
+                setInterval(spin, 500);
+            };
+        </script>
+    </head>
+    <body onload="loaded()">
+        <h2 id="title">PIZZA</h2>
+        <h4 class="listTitle"><span class="spin">—</span>---PIZZAS---<span class="spin">—</span></h4>
+        <div class="list" id="pizzaListDIV">
+            <li>4x HAWAIIAN</li>
+            <li>1x VEGETARIAN</li>
+            <li>1x PEPPERONI W/ THIN CRUST</li>
+            <li>2x MEAT LOVERS</li>
+        </div>
+        <h4 class="listTitle"><span class="spin">—</span>---SNACKS---<span class="spin">—</span></h4>
+        <div class="list"id="snackListDIV">
+            <li>CHIPS</li>
+        </div>
+        <h4 class="listTitle"><span class="spin">—</span>---DRINKS---<span class="spin">—</span></h4>
+        <div class="list" id="drinkListDIV">
+            <li>MOUNTAIN DEW</li>
+            <li>FANTA</li>
+            <li>DIET COKE/SUGAR FREE ICED TEA</li>
+        </div>
+    </body>
+</html>
