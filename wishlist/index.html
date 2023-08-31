@@ -3,26 +3,7 @@
     <head>
         <meta charset="UTF-8"\>
         <title>Under Construction...</title>
-        <style>
-            body {
-                background-image: url("https://www.publicdomainpictures.net/pictures/120000/velka/galaxy-space-background.jpg");
-                text-align: center;
-            }
-            h1 {
-                color: whitesmoke;
-            }
-            p {
-                color: whitesmoke;
-                font-size: 24px;
-                white-space: pre;
-            }
-
-            div {
-                background-color: rgba(255, 255, 255, 0.15);
-                padding: 15px;
-                margin-top: 15%;
-            }
-        </style>
+        <link rel="stylesheet" href="css/homepage.css">
     </head>
     <body>
         <div>
@@ -32,25 +13,5 @@
         </div>
     </body>
 
-    <script>
-        var intA = 0;
-        setInterval(function() {
-            let spin = document.getElementById("spin");
-            let txt="[";
-            intA++;
-
-            if (intA >= 20) { intA = 0; }
-
-            for (let i = 0; i < 20; i++) {
-                if (intA == i) {
-                    txt += "*";
-                }
-                else {
-                    txt += " ";
-                }
-            }
-            txt+="]";
-            spin.innerHTML = txt;
-        }, 250);
-    </script>
+    <script src="js/homepage.js"></script>
 </html>
