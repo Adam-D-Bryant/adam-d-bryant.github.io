@@ -1,19 +1,32 @@
-var intA = 0;
+let christmasDate = new Date(2023, 11, 25, 0, 0, 0);
 setInterval(function () {
-    let spin = document.getElementById("spin");
-    let txt = "[";
-    intA++;
-
-    if (intA >= 20) { intA = 0; }
-
-    for (let i = 0; i < 20; i++) {
-        if (intA == i) {
-            txt += "*";
-        }
-        else {
-            txt += " ";
-        }
+    let curDate = new Date();
+    let diff = christmasDate-curDate;
+    if (diff <= 0) {
+        document.getElementById("message").style.setProperty("display", "flex");
+        document.getElementById("timerSection").style.setProperty("display", "none");
     }
-    txt += "]";
-    spin.innerHTML = txt;
-}, 250);
+    else {
+        let days, hours, minutes, seconds;
+        let sDays, sHours, sMinutes, sSeconds;
+
+        document.getElementById("message").style.setProperty("display", "none");
+        document.getElementById("timerSection").style.setProperty("display", "flex");
+
+        seconds =   Math.floor(diff/1000)       % 60;
+        minutes =   Math.floor(diff/60000)      % 60;
+        hours =     Math.floor(diff/3600000)    % 24;
+        days =      Math.floor(diff/86400000);
+
+        sSeconds = ((seconds < 10) ? "0":"") + seconds;
+        sMinutes = ((minutes < 10) ? "0":"") + minutes;
+        sHours = ((hours < 10) ? "0":"") + hours;
+        sDays = ((days < 10) ? "0":"") + days;
+
+        document.getElementById("timerDays").innerHTML = `${sDays}`;
+        document.getElementById("timerHours").innerHTML = `${sHours}`;
+        document.getElementById("timerMinutes").innerHTML = `${sMinutes}`;
+        document.getElementById("timerSeconds").innerHTML = `${sSeconds}`;
+    }
+}, 1000);
+

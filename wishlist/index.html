@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8"\>
-        <title>CHRISTMAS WISHLIST 2023</title>
+        <title>CHRISTMAS WISHLIST - 2023</title>
         <link rel="stylesheet" href="css/flex.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/homepage.css">
@@ -40,10 +40,38 @@
                 <a href="misc.html" class="navbar-link">MISC.</a>
             </div>
         </div>
-        <div id="mainArea" class="flex-3 flex-col">
-            <div class="flex-item centre"><h1>HOMEPAGE</h1></div>
-            <div class="flex-item centre"><p><span id="spin"></span></p></div>
-            <div class="flex-item centre"><p>WOO! Time to develop!</p></div>
+
+        <div id="mainArea" class="flex flex-col">
+            <div class="flex-item centre"><h1>CHRISTMAS WISHLIST - 2023</h1></div>
+            <div class="flex-item centre flex">
+                <p id="message" class="flex-item timerText">MERRY CHRISTMAS!</p>
+                <div class="flex-item" id="timerSection">
+                    <div class="timerCounter">
+                        <p id="timerDays" class="timerText">00</p>
+                        <div class="timerBottom">
+                            <p class="timerBottomText">DAYS</p>
+                        </div>
+                    </div>
+                    <div class="timerCounter">
+                        <p id="timerHours" class="timerText">00</p>
+                        <div class="timerBottom">
+                            <p class="timerBottomText">HOURS</p>
+                        </div>
+                    </div>
+                    <div class="timerCounter">
+                        <p id="timerMinutes" class="timerText">00</p>
+                        <div class="timerBottom">
+                            <p class="timerBottomText">MINUTES</p>
+                        </div>
+                    </div>
+                    <div class="timerCounter">
+                        <p id="timerSeconds" class="timerText">00</p>
+                        <div class="timerBottom">
+                            <p class="timerBottomText">SECONDS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
     <script src="js/homepage.js"></script>
