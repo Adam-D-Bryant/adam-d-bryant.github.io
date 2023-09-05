@@ -17,6 +17,11 @@
     flex-direction: column;
 }
 
+.flex-item {
+    display: flex;
+    flex: 33%;
+}
+
 .debug {
     border: 1px solid red;
 }
