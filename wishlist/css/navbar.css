@@ -1,0 +1,65 @@
+#navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex: 100%;
+    background-image: linear-gradient(-225deg, rgb(255, 64, 0), lightgreen 10%, whitesmoke 40%, whitesmoke 60%, lightgreen 90%, rgb(255, 64, 0));
+    height: 48px;
+    width: 100%;
+}
+
+.navbar-item {
+    display: flex;
+    text-align: center;
+    height: 100%;
+}
+
+#navbar-title {
+    flex: 0 1 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+#navbar-spacer { flex: 0 1 25%;  }
+
+.navbar-button {
+    display: flex;
+    flex: 0 1 10%;
+    align-items: center;
+    border-left: 1px solid black;
+    position: relative; 
+    justify-content: center;
+}
+
+.present-red { background-color: rgb(255, 72, 0); }
+.present-green { background-color: rgb(48, 199, 48); }
+
+.navbar-link {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    color: black;
+    font-weight: bold;
+    position: absolute; 
+    width: 100%
+}
+
+.present-stripe-v { position: absolute; background-color: white; width: 8px; height: 48px; right: 10%; }
+.present-stripe-h { position: absolute; background-color: white; width: 100%; height: 8px; top: 10%; }
+.present-ribbon { position: absolute; max-height: 50%; max-width: 20%; top: 5%; right: 5%; rotate: -25deg; }
+
+@media (max-width: 800px) {
+    #navbar-title, #navbar-spacer { display: none; }
+    .navbar-button { flex: 0 1 20%; }
+}
