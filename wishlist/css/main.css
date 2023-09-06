@@ -17,3 +17,101 @@
 #toTopButton:hover {
     background-color: rgb(48, 199, 48); /* Add a dark-grey background on hover */
 }
+
+.itemLink { text-decoration: none;}
+
+#itemList { align-items: center;}
+.itemContainer { margin-top: 40px; width: 100%; }
+
+
+
+.itemBuffer { flex: 5%; }
+
+.item-left {
+    background-image: linear-gradient(90deg, rgb(240, 46, 46) 5%, rgb(200,200,200) 60%, rgb(118, 236, 49));
+}
+
+.item-right {
+    background-image: linear-gradient(270deg, rgb(240, 46, 46) 5%, rgb(200,200,200) 60%, rgb(118, 236, 49));
+}
+
+.itemImgContainer {
+    border-left: 1px solid black; 
+    border-right: 1px solid black; 
+    flex: 20%; padding: 10px;
+    visibility: visible;
+}
+
+
+.itemTextContainer { flex: 60%; display: flex; position: static; visibility: visible; }
+.itemImg { width: 100%; flex: 50%; display: flex;}
+.itemImgText {  font-family: 'Caveat', cursive; font-size: 18px; font-weight: bold; color: rgb(0, 0, 0); text-align: center;  justify-content: center;}
+.itemImgTextContainer { text-align: center;  justify-content: center; flex: 50%; display: flex; }
+
+#endBuffer {
+    margin-bottom: 40px;
+}
+
+.tapForDetails {
+    display: none;
+}
+
+.mobileLinkDiv {
+    display: none;
+}
+
+.itemText { font-family: 'Caveat', cursive; font-size: 26px; flex: 100%; color: rgb(0, 0, 0); text-align: center; padding-left: 10px; padding-right: 10px; }
+
+@media (max-width: 800px) {
+    .itemBuffer {
+        flex: 5%;
+    }
+
+    .itemImgContainer {
+        flex: 90%;
+        border-left: none;
+        border-right: none;
+        visibility: visible;
+    }
+
+    .itemTextContainer {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .tapForDetails {
+        display: flex;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+
+        flex: 1;
+    }
+
+    .itemTextContainer:hover {
+        cursor: pointer;
+    }
+
+    .itemText {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mobileLinkDiv {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mobileLink {
+        text-decoration: underline;
+        padding: 5px;
+        font-family: 'Caveat', cursive; font-size: 18px; font-weight: bold; color: rgb(0, 0, 0); text-align: center;  justify-content: center;
+    }
+
+    .itemContainer:hover {
+        cursor: pointer;
+    }
+}
