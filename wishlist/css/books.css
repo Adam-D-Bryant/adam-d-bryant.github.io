@@ -1,0 +1,28 @@
+body {
+    background-color: #FEFFED;
+    background-image: url("../img/backgroundBooks.jpg");
+    background-repeat: repeat;
+    margin: 0px;
+}
+
+#title{
+    color: rgb(50,50,50);
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+    font-weight: bolder;
+}
+#subTitle {
+    color: rgb(50,50,50);
+    font-size: 30px;
+    white-space: pre;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    justify-content: center;
+}
+
+#mainArea {
+    background-image: linear-gradient(-225deg, rgba(255, 64, 0, 0.50), rgba(144, 238, 144, 0.50) 10%, rgba(225, 225, 225, 1.75) 40%, rgba(225, 225, 225, 1.75) 60%, rgba(144, 238, 144, 0.50) 90%, rgba(255, 64, 0, 0.50));
+    margin-top: 96px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

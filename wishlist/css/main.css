@@ -21,9 +21,11 @@
 .itemLink { text-decoration: none;}
 
 #itemList { align-items: center;}
-.itemContainer { margin-top: 40px; width: 100%; }
-
-
+.itemContainer { 
+    margin-top: 40px; width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 .itemBuffer { flex: 5%; }
 
@@ -38,12 +40,14 @@
 .itemImgContainer {
     border-left: 1px solid black; 
     border-right: 1px solid black; 
-    flex: 20%; padding: 10px;
+    flex: 20%; /*padding: 10px;*/
     visibility: visible;
 }
 
 
-.itemTextContainer { flex: 60%; display: flex; position: static; visibility: visible; }
+.itemTextContainer { 
+    flex: 60%; display: flex; position: static; visibility: visible; width: auto; 
+}
 .itemImg { width: 100%; flex: 50%; display: flex;}
 .itemImgText {  font-family: 'Caveat', cursive; font-size: 18px; font-weight: bold; color: rgb(0, 0, 0); text-align: center;  justify-content: center;}
 .itemImgTextContainer { text-align: center;  justify-content: center; flex: 50%; display: flex; }
@@ -60,7 +64,20 @@
     display: none;
 }
 
-.itemText { font-family: 'Caveat', cursive; font-size: 26px; flex: 100%; color: rgb(0, 0, 0); text-align: center; padding-left: 10px; padding-right: 10px; }
+.itemText { 
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    flex: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.itemTextContainer .itemText:first-of-type {
+    margin-top: 26px;
+}
 
 @media (max-width: 800px) {
     .itemBuffer {
@@ -77,6 +94,7 @@
     .itemTextContainer {
         position: absolute;
         visibility: hidden;
+        width: 100%;
     }
 
     .tapForDetails {
@@ -103,6 +121,7 @@
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
+        border-bottom: 1px solid black;
     }
 
     .mobileLink {
