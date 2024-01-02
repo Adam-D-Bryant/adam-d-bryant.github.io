@@ -66,8 +66,16 @@ body {
     100% { background-position:10% 0% }
 }
 
+#vernumarea {
+    right: 20px; 
+    bottom: 0px; 
+    position: absolute; 
+    margin: 0px; 
+    padding: 0px;
+}
+
 #vernum {
-    position: absolute;
-    text-align: right;
     color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
 }
