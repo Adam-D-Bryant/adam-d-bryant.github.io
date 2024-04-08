@@ -1,8 +1,42 @@
+/*
+ * navbar.css
+ * Ver: 08.04.11
+ * Contains the main css formatting for navbars. All HTML pages load this css file second.
+ */
+
 #navbarArea {
     background-color: gray;
     position: fixed;
     width: 100%;
-    height: 64px;
+    height: 48px;
     top: 0;
     left: 0;
+}
+
+.navbarText {
+    margin: 0;
+    width: 100%;
+}
+
+.navbarItem {
+    border-left: 1px solid black;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+}
+
+div.navbarItem:first-of-type {
+    border-left: none;
+}
+
+div.navbarItem .navbarText {
+    padding-left: 16px;
+}
+
+@media (max-width: 600px) {
+    a.navbarItem:first-of-type {
+        border-left: none;
+    }
 }

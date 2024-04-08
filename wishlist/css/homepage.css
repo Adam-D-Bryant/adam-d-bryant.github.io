@@ -1,4 +1,7 @@
 #mainArea {
-    border: 1px solid red;
     margin-top: 96px;
+}
+
+body {
+    background-image: url("../img/backgroundHome.jpg");
 }

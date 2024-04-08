@@ -1,12 +1,24 @@
 /*
  * core.css
- * Ver: 24.01.11
- * Contains the main css formatting. All other HTML pages load this css file first.
+ * Ver: 08.04.11
+ * Contains the main css formatting. All HTML pages load this css file first.
  */
+
+.flex {
+   display: flex;
+ }
+
+.flex-hide-mobile {
+   display: flex;
+}
 
 .flex-h {
    display: flex;
-   background-color: rgba(0, 255, 0, 1);
+   flex-wrap: nowrap;
+}
+
+.flex-h-nowrap {
+   display: flex;
    flex-wrap: nowrap;
 }
 
@@ -14,17 +26,18 @@
    .flex-h {
       flex-wrap: wrap;
    }
+   .flex-hide-mobile {
+      display: none;
+   }
 }
 
 .flex-v {
    display: flex;
    flex-direction: column;
-   background-color: rgba(0, 255, 0, 1);
 }
 
 .flex-expand-height {
    height: 100%;
-   border: 1px dotted red;
 }
 
 .flex-left {
@@ -51,62 +64,62 @@
    text-align: right;
 }
 
+.align-left {
+   align-items: left;
+}
+
+.align-centre {
+   align-items: center;
+}
+
+.align-right {
+   align-items: right;
+}
+
 .flex-1 {
    flex: 100%;
-   border: 1px dotted blue;
 }
 
 .flex-2 {
    flex: 50%;
-   border: 1px dotted blue;
 }
 
 .flex-3 {
    flex: 33%;
-   border: 1px dotted blue;
 }
 
 .flex-4 {
    flex: 25%;
-   border: 1px dotted blue;
 }
 
 .flex-5 {
    flex: 20%;
-   border: 1px dotted blue;
 }
 
 .flex-6 {
    flex: 17%;
-   border: 1px dotted blue;
 }
 
 .flex-7 {
    flex: 14%;
-   border: 1px dotted blue;
 }
 
 .flex-8 {
    flex: 12%;
-   border: 1px dotted blue;
 }
 
 .flex-9 {
    flex: 11%;
-   border: 1px dotted blue;
 }
 
 .flex-10 {
    flex: 10%;
-   border: 1px dotted blue;
 }
 
 .flex-11 {
    flex: 9%;
-   border: 1px dotted blue;
 }
 
 .flex-12 {
    flex: 8%;
-   border: 1px dotted blue;
 }
