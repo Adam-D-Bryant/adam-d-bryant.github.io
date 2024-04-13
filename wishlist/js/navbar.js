@@ -1,6 +1,5 @@
 const toggleButton = document.querySelector(".nav-toggle");
 const menu = document.querySelector(".nav-menu");
-const items = document.querySelectorAll(".nav-item");
 
 function toggleMenu() {
 

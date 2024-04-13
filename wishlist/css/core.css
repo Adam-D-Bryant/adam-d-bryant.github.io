@@ -1,7 +1,8 @@
 /*
  * core.css
- * Ver: 08.04.11
+ * Ver: 13.04.11
  * Contains the main css formatting. All HTML pages load this css file first.
  */
 
 * { margin: 0; padding: 0; border: none; }
+html, body { height: 100%; }

@@ -1,3 +1,9 @@
+/*
+ * homepage.css
+ * Ver: 13.04.11
+ * Contains the main css formatting for the homepage. Applicable HTML pages load this css file last.
+ */
+
 body {
     background-image: url("../img/backgroundHome.jpg");
 }
