@@ -108,6 +108,15 @@
     }
 }
 
-.nav-active-choice {
-    background-color: green;
+.nav-active-choice-g {
+    background-image: linear-gradient(135deg, white, green);
+}
+.nav-active-choice-o {
+    background-image: linear-gradient(135deg, white, orange);
+}
+.nav-active-choice-b {
+    background-image: linear-gradient(135deg, white, blue);
+}
+.nav-active-choice-p {
+    background-image: linear-gradient(135deg, white, purple);
 }

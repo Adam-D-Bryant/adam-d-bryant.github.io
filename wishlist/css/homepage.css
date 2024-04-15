@@ -1,9 +1,122 @@
 /*
  * homepage.css
- * Ver: 13.04.11
+ * Ver: 15.04.11
  * Contains the main css formatting for the homepage. Applicable HTML pages load this css file last.
  */
 
 body {
     background-image: url("../img/backgroundHome.jpg");
+}
+
+#homeArea {
+    display: flex;
+    background-color: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px;
+    padding-top: 16px;
+    box-sizing: border-box;
+    gap: 32px;
+}
+
+#subtitle p {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.homeItem {
+    border: 1px solid black;
+    box-sizing: border-box;  
+}
+
+.homeItem:first-of-type { margin-top: 16px; }
+
+#clothesItem {
+    background-image: linear-gradient(to right, white, green);
+}
+
+#foodItem {
+    background-image: linear-gradient(to right, white, orange);
+}
+
+#gamesItem {
+    background-image: linear-gradient(to right, white, blue);
+}
+
+#miscItem {
+    background-image: linear-gradient(to right, white, purple);
+}
+
+.homeItemCont {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    width: 100%;
+}
+
+.homeTitle {
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+
+.homeTitle p {
+    padding-left: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.homeImg {
+    flex: 1;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+#vernumarea {
+    right: 10px; 
+    bottom: 10px; 
+    position: relative; 
+    margin: 0px; 
+    padding: 0px;
+    text-align: right;
+}
+
+#vernum {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+
+@media all and (min-width: 960px) {
+
+    #homeArea {
+        background-color: rgba(255,255,255,0.6);
+        margin-top: 64px;
+        padding-top: 32px;
+    }
+    .homeItem {
+        flex: 1;
+    }
+    .homeItem:first-of-type {
+        margin-top: 0px;
+    }
+
+    #vernumarea {
+        right: 10px; 
+        bottom: 10px; 
+        position: absolute; 
+        margin: 0px; 
+        padding: 0px;
+    }
+    
+    #vernum {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+    }
 }

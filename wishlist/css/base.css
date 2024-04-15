@@ -1,6 +1,6 @@
 /*
  * base.css
- * Ver: 13.04.11
+ * Ver: 15.04.11
  * Contains the main css formatting for item pages. All HTML pages load this css file third.
  */
 
@@ -122,6 +122,10 @@
     object-fit: contain;
     height: 100%;
     max-width: 100%;
+}
+
+.toggleArea:hover {
+    cursor: pointer;
 }
 
 @media all and (min-width: 960px) {
