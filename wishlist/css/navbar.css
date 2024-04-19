@@ -1,6 +1,6 @@
 /*
  * navbar.css
- * Ver: 13.04.11
+ * Ver: 24.04.19
  * Contains the main css formatting for navbars. All HTML pages load this css file second.
  */
 
@@ -56,9 +56,6 @@
     display: block;
 }
 
-.nav-item .nav-link:hover {
-    color: #CCC;
-}
 
 .active .nav-item {
     display: block;
@@ -108,15 +105,7 @@
     }
 }
 
-.nav-active-choice-g {
-    background-image: linear-gradient(135deg, white, green);
-}
-.nav-active-choice-o {
-    background-image: linear-gradient(135deg, white, orange);
-}
-.nav-active-choice-b {
-    background-image: linear-gradient(135deg, white, blue);
-}
-.nav-active-choice-p {
-    background-image: linear-gradient(135deg, white, purple);
-}
+.highlight-g, .nav-active-choice-g { background-color: rgb(0, 130, 0); }
+.highlight-o, .nav-active-choice-o { background-color: rgb(255,128,0); }
+.highlight-b, .nav-active-choice-b { background-color: rgb(64,64,255); }
+.highlight-p, .nav-active-choice-p { background-color: rgb(128, 32, 255); }

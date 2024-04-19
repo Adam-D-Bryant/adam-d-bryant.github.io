@@ -1,6 +1,6 @@
 /*
  * homepage.css
- * Ver: 15.04.11
+ * Ver: 24.04.19
  * Contains the main css formatting for the homepage. Applicable HTML pages load this css file last.
  */
 
@@ -19,12 +19,6 @@ body {
     gap: 32px;
 }
 
-#subtitle p {
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-}
 .homeItem {
     border: 1px solid black;
     box-sizing: border-box;  
@@ -32,20 +26,41 @@ body {
 
 .homeItem:first-of-type { margin-top: 16px; }
 
+
 #clothesItem {
-    background-image: linear-gradient(to right, white, green);
+    background-color: rgb(0, 180, 0);
 }
 
 #foodItem {
-    background-image: linear-gradient(to right, white, orange);
+    background-color: rgb(255,128,0);
 }
 
 #gamesItem {
-    background-image: linear-gradient(to right, white, blue);
+    background-color: rgb(64,64,255);
 }
 
 #miscItem {
-    background-image: linear-gradient(to right, white, purple);
+    background-color: rgb(128, 32, 255);
+}
+
+#clothesItem .homeTitle { box-shadow: inset 0 0 0 0 rgb(0, 130, 0); transition: box-shadow 0.1s ease-in-out }
+#clothesItem:hover .homeTitle { color: white; box-shadow: inset 100px 0 0 0 rgb(0, 130, 0); }
+
+#foodItem .homeTitle { box-shadow: inset 0 0 0 0 rgb(205,78,0); transition: box-shadow 0.1s ease-in-out }
+#foodItem:hover .homeTitle { color: white; box-shadow: inset 70px 0 0 0 rgb(205,78,0); }
+
+#gamesItem .homeTitle { box-shadow: inset 0 0 0 0 rgb(4,4,205); transition: box-shadow 0.1s ease-in-out }
+#gamesItem:hover .homeTitle { color: white; box-shadow: inset 75px 0 0 0 rgb(4,4,205); }
+
+#miscItem .homeTitle { box-shadow: inset 0 0 0 0 rgb(78, 0, 205); transition: box-shadow 0.1s ease-in-out }
+#miscItem:hover .homeTitle { color: white; box-shadow: inset 65px 0 0 0 rgb(78, 0, 205); }
+
+.homeItemCont .homeImg {
+    transition: filter 0.1s ease-in-out;
+    filter: invert(0%);
+}
+.homeItemCont:hover .homeImg {
+    filter: invert(100%);
 }
 
 .homeItemCont {
@@ -75,23 +90,6 @@ body {
     object-fit: contain;
 }
 
-
-#vernumarea {
-    right: 10px; 
-    bottom: 10px; 
-    position: relative; 
-    margin: 0px; 
-    padding: 0px;
-    text-align: right;
-}
-
-#vernum {
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-}
-
-
 @media all and (min-width: 960px) {
 
     #homeArea {
@@ -104,19 +102,5 @@ body {
     }
     .homeItem:first-of-type {
         margin-top: 0px;
-    }
-
-    #vernumarea {
-        right: 10px; 
-        bottom: 10px; 
-        position: absolute; 
-        margin: 0px; 
-        padding: 0px;
-    }
-    
-    #vernum {
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        font-style: italic;
     }
 }

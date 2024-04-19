@@ -1,6 +1,6 @@
 /*
  * base.css
- * Ver: 15.04.11
+ * Ver: 24.04.19
  * Contains the main css formatting for item pages. All HTML pages load this css file third.
  */
 
@@ -17,20 +17,19 @@
     justify-content: space-evenly;
 }
 
-#title p {
+#title p, #subtitle p {
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
-#subtitle p {
-    color: black;
+#title-white p, #subtitle-white p {
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
 }
-
 
 #itemArea {
     display: flex;
@@ -51,7 +50,7 @@
 .itemHeader {
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     padding-top: 16px;
     box-sizing: border-box;
@@ -67,7 +66,7 @@
 
 .leftArea, .rightArea {
     display: none;
-    background-color: white;
+    background-color: lightgrey;
     justify-content: center;
 }
 
@@ -116,16 +115,41 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itemImg {
     object-fit: contain;
-    height: 100%;
+    max-height: 100%;
     max-width: 100%;
+    border: 1px solid black;
 }
 
 .toggleArea:hover {
     cursor: pointer;
+}
+
+#subtitle, #subtitle-white {
+    text-align: center;
+}
+
+.enlargeImg {
+    color: black;
+}
+
+#vernumarea {
+    position: relative; 
+    margin: 16px;
+    padding: 0px;
+    text-align: right;
+}
+
+#vernum {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
 }
 
 @media all and (min-width: 960px) {
@@ -136,13 +160,13 @@
     .leftArea, .rightArea {
         display: flex;
         flex: 5;
-        background-color: white;
+        background-color: lightgray;
         order: 0;
     }
 
     .imgArea {
         flex: 6;
-        background-color: lightgrey;
+        background-color: darkgrey;
         border-left: 1px solid black;
         border-right: 1px solid black;
     }
