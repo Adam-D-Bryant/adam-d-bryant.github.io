@@ -1,6 +1,6 @@
 /*
  * homepage.css
- * Ver: 24.04.19
+ * Ver: 24.04.22
  * Contains the main css formatting for the homepage. Applicable HTML pages load this css file last.
  */
 
@@ -21,7 +21,7 @@ body {
 
 .homeItem {
     border: 1px solid black;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 .homeItem:first-of-type { margin-top: 16px; }

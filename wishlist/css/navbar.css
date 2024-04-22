@@ -1,6 +1,6 @@
 /*
  * navbar.css
- * Ver: 24.04.19
+ * Ver: 24.04.22
  * Contains the main css formatting for navbars. All HTML pages load this css file second.
  */
 
@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     position: fixed;
+    z-index: 1;
 }
 
 .nav-menu {
@@ -26,6 +27,7 @@
     order: 0;
     margin-left: 16px;
     padding: 8px 8px 8px 8px;
+    flex: 1;
 }
 
 .nav-toggle {
