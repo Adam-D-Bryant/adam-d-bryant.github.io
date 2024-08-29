@@ -1,0 +1,68 @@
+/*
+ * styling.css
+ * Ver: 24.08.29
+ * Contains the main css formatting/styling.
+ */
+
+html {
+    height: 100%;
+}
+
+body {
+
+
+    background: linear-gradient(145deg, #5f2879, #00418D, #00C2DE, #00BA71, #FA8901, #F43545);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+p {
+    color: white;
+}
+
+#mainArea {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#title {
+    background-color: rgba(99, 99, 99, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+}
+
+#subtitle {
+    background-color: rgba(99, 99, 99, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+#vernumarea {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+#vernum {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,8 +1,0 @@
-/*
- * core.css
- * Ver: 24.04.19
- * Contains the main css formatting. All HTML pages load this css file first.
- */
-
-* { margin: 0; padding: 0; border: none; }
-html, body { height: 100%; }

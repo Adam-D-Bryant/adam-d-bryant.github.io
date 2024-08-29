@@ -1,9 +1,0 @@
-/*
- * miscpage.css
- * Ver: 24.04.19
- * Contains the main css formatting for the item page. Applicable HTML pages load this css file last.
- */
-
-body {
-    background-image: url("../img/backgroundMisc.jpg");
-}
