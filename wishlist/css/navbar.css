@@ -1,0 +1,27 @@
+#navbar {
+    display: flex;
+    position: fixed;
+    height: 64px;
+    background-color: gray;
+    width: 100%;
+}
+
+#navbarTitle {
+    flex: 2;
+    background-color: lightblue;
+}
+
+#navbarItemCollection {
+    display: flex;
+    flex: 8;
+    background-color: lightgreen;
+}
+
+.navbarItem {
+    flex: 1;
+    background-color: blue;
+}
+
+.navbarBlankSpace {
+    background-color: red;
+}
