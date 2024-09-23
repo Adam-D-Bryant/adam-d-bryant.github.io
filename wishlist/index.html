@@ -3,21 +3,61 @@
     <head>
         <meta charset="UTF-8" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <title>CHRISTMAS 2024 WISHLIST</title>
+        <title>CHRISTMAS 2024 WISHLIST: HOME PAGE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/core.css">
         <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/homepage.css">
     </head>
     <body>
 
         <div id="navbar">
-            <div id="navbarTitle">TITLE</div>
-            <div id="navbarItemCollection">
-                <div class="navbarItem navbarBlankSpace"></div>
-                <div class="navbarItem">TEST A</div>
-                <div class="navbarItem">TEST B</div>
-                <div class="navbarItem">TEST C</div>
-            </div>
+            <div id="navbarMenuButton"><a href="#"><i class="fa fa-bars"></i></a></div>
+            <div id="navbarTitle">HOME PAGE</div>
         </div>
 
+        <div id="menu" class="">
+            <ul>
+                <li class="menuItem" id="menuClothesItem"><a href="#">CLOTHES</a></li>
+                <li class="menuItem" id="menuFoodItem"><a href="#">FOOD</a></li>
+                <li class="menuItem" id="menuGamesItem"><a href="#">GAMES</a></li>
+                <li class="menuItem" id="menuMiscItem"><a href="#">MISC</a></li>
+            </ul>
+        </div>
+
+
+        <div id="mainArea">
+
+            <div id="titleArea">
+                <h1>CHRISTMAS WISHLIST 2024</h1>
+            </div>
+
+            <div id="timerArea">
+                <div class="timerBox">
+                    <span class="timerText" id="timerTextD"></span>
+                    <span class="timerTextLabel">DAYS</span>
+                </div>
+                <div class="timerBox">
+                    <span class="timerText" id="timerTextH"></span>
+                    <span class="timerTextLabel">HOURS</span>
+                </div>
+                <div class="timerBox">
+                    <span class="timerText" id="timerTextM"></span>
+                    <span class="timerTextLabel">MINS</span>
+                </div>
+                <div class="timerBox">
+                    <span class="timerText" id="timerTextS"></span>
+                    <span class="timerTextLabel">SECS</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="verArea">
+            <span>Ver: 2024.09.23</span>
+        </div>
+
+        <script src="./js/navbar.js"></script>
+        <script src="./js/homepage.js"></script>
     </body>
 </html>
