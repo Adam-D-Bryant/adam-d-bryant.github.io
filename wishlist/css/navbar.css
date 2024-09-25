@@ -1,7 +1,6 @@
 #navbar {
     position: fixed;
     height: 64px;
-    background-image: linear-gradient(to right, rgb(0,255,0), white, rgb(255, 0, 0));
     width: 100%;
     top: 0;
     overflow: hidden;
@@ -38,7 +37,7 @@
 }
 
 #menu {
-    background-color: #BBBBBB;
+    background-color: #BBBBBBBB;
     position: fixed;
     width: 0%;
     height: 100%;
@@ -79,9 +78,7 @@
 #menuFoodItem { background-image: linear-gradient(to right,  #FF8800 60%, #BBBBBB); }
 #menuGamesItem { background-image: linear-gradient(to right, #2222FF 60%,  #BBBBBB); }
 #menuMiscItem { background-image: linear-gradient(to right,  #AA00AA 60%, #BBBBBB); }
+#menuHomeItem { background-image: linear-gradient(to right,  #FF0000 60%, #BBBBBB); }
+
 .menuItem a:hover { color: white; }
 #menu.menu-active { width: 100%; }
-
-@media only screen and (max-width: 600px) {
-
-}

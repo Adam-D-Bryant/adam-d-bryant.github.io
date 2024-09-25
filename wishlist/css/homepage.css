@@ -1,12 +1,12 @@
 body {
     margin-top: 64px;
     background:linear-gradient(0deg, #ffe0f24d, #ffe0f24d), URL("../img/backgroundHome.jpg");
-    
 }
+
+#navbar { background-image: linear-gradient(to right, #00FF00, white, #FF0000); }
 
 #timerArea {
     width: 50%;
- 
     display: flex;
     background-color: #77777777;
     justify-content: space-evenly;
@@ -56,22 +56,7 @@ body {
     color: black;
 }
 
-#titleArea {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 128px;
-    font-family: ChristmasFont;
-}
-
 @media only screen and (max-width: 600px) {
-    #timerArea {
-        width: 100%;
-        padding: 0;
-    }
-
-    .timerBox {
-        width: 20%;
-    }
+    #timerArea { width: 100%; padding: 0; }
+    .timerBox { width: 20%; }
 }

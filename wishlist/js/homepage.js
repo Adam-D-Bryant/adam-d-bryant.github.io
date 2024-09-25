@@ -20,5 +20,13 @@ function updateClock() {
     document.getElementById("timerTextS").innerHTML = (diff <= 0) ? "00":s;
 }
 
+subtitleTexts = [
+    "Use the navbar at the top to start exploring!",
+    "Let's see what's here!",
+    "Christmas isn't too far away!",
+];
+
 updateClock();
 setInterval(updateClock, 1000);
+
+document.getElementById("subtitleText").innerHTML = ((CHRISTMAS_DATE - (new Date())) <= 0) ? "MERRY CHRISTMAS!" : subtitleTexts[(new Date() % subtitleTexts.length)];

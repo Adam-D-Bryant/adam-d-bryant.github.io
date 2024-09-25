@@ -1,0 +1,9 @@
+#titleArea, #subtitleArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 128px;
+    font-family: ChristmasFont;
+    text-align: center;
+}

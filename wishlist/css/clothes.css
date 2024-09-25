@@ -1,0 +1,9 @@
+body {
+    margin-top: 64px;
+    background:linear-gradient(0deg, #ffe0f211, #ffe0f211), URL("../img/backgroundClothes.jpg");
+    background-repeat: repeat;
+}
+
+#navbar { background-image: linear-gradient(to right, rgb(0,255,0), white, rgb(0,255,0)); }
+
+#subtitleArea { background-color: #77777777; font-size: 24px; }
