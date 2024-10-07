@@ -46,7 +46,7 @@ body { margin-top: 64px; }
 }
 
 .whiteOverlay {
-    background: #FFFFFFAA;
+    background: #FFFFFF88;
     display: block;
     position: absolute;
     top: 0;
@@ -67,6 +67,8 @@ body { margin-top: 64px; }
     font-size: 32px;
     transition: 0.2s;
     width: 100%;
+    background-color: #FFFFFFBB;
+    height: fit-content;
 }
 
 .itemTitle {

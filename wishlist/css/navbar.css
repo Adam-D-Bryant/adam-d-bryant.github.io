@@ -29,7 +29,11 @@
     float: left;
     margin-left: 24px;
     z-index: 3;
+    rotate: 0deg;
+    transition: 0.5s;
 }
+
+#navbarMenuButton.menu-active { rotate: 90deg; }
 
 #navbarMenuButton a {
     text-decoration: none;
@@ -78,7 +82,8 @@
 #menuFoodItem { background-image: linear-gradient(to right,  #FF8800 60%, #BBBBBB); }
 #menuGamesItem { background-image: linear-gradient(to right, #2222FF 60%,  #BBBBBB); }
 #menuMiscItem { background-image: linear-gradient(to right,  #AA00AA 60%, #BBBBBB); }
-#menuHomeItem { background-image: linear-gradient(to right,  #FF0000 60%, #BBBBBB); }
+#menuHomeItem { background-image: linear-gradient(to right,  #FF2222 60%, #BBBBBB); }
+#menuBooksItem { background-image: linear-gradient(to right,  #6e6e6e 60%, #BBBBBB); }
 
 .menuItem a:hover { color: white; }
 #menu.menu-active { width: 100%; }
