@@ -7,3 +7,83 @@
     font-family: ChristmasFont;
     text-align: center;
 }
+
+body { margin-top: 64px; }
+
+#background {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#itemArea {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item {
+    min-width: 300px;
+    width: 25%;
+    height: 512px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    position: relative;
+    color: black;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.whiteOverlay {
+    background: #FFFFFFAA;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+.itemTitle, .itemDesc {
+    position: absolute;
+    margin: 0;
+    bottom: 16px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: ChristmasFont;
+    font-size: 32px;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.itemTitle {
+    top: 16px;
+    font-size: 32px;
+}
+
+.itemDesc {
+    bottom: 16px;
+    font-size: 24px;
+}
+
+.item:hover .itemTitle, .item:hover .itemDesc, .item:hover .whiteOverlay  { opacity: 0; }
+
+@media only screen and (max-width: 600px) {
+    .item {
+        width: 80%;
+        min-width: none;
+    }
+}

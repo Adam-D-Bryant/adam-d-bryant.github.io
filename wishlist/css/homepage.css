@@ -1,6 +1,5 @@
 body {
-    margin-top: 64px;
-    background:linear-gradient(0deg, #ffe0f24d, #ffe0f24d), URL("../img/backgroundHome.jpg");
+    background: linear-gradient(0deg, #ffe0f24d, #ffe0f24d), URL("../img/backgroundHome.jpg");
 }
 
 #navbar { background-image: linear-gradient(to right, #00FF00, white, #FF0000); }
@@ -40,7 +39,6 @@ body {
 .timerTextLabel {
     background-color: #ff4b4b;
     color: black;
-
     height: 32px;
     align-items: center;
     display: flex;
