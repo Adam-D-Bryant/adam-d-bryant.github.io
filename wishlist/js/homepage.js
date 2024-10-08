@@ -21,7 +21,7 @@ function updateClock() {
 }
 
 subtitleTexts = [
-    "Use the navbar at the top to start exploring!",
+    "Use the button at the top-left to start exploring!",
     "Let's see what's here!",
     "Christmas isn't too far away!",
 ];

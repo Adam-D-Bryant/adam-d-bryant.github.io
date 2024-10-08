@@ -41,7 +41,7 @@
 }
 
 #menu {
-    background-color: #BBBBBBBB;
+    background-color: #BBBBBBDD;
     position: fixed;
     width: 0%;
     height: 100%;
@@ -67,6 +67,7 @@
     line-height: 64px;
     overflow: hidden;
     z-index: 6;
+    font-weight: bold;
 }
 
 .menuItem a {

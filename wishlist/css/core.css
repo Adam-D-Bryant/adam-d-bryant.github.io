@@ -1,8 +1,13 @@
 body { margin: 0; }
 html { height: 100%;}
 
-/* Santa's Big Secret (Blambot Comic Fonts): https://www.1001fonts.com/santas-big-secret-bb-font.html */
+/* Mountains of Christmas (Tart Workshop): https://www.1001fonts.com/mountains-of-christmas-font.html */
 @font-face {
     font-family: ChristmasFont;
-    src: URL("../fonts/santasBigSecret.ttf");
+    src: URL("../fonts/mountains-of-christmas.regular.ttf");
+}
+@font-face {
+    font-family: ChristmasFont;
+    src: URL("../fonts/mountains-of-christmas.bold.ttf");
+    font-weight: bold;
 }
