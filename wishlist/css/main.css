@@ -5,6 +5,10 @@
  * All HTML pages will run this CSS file third. Handles the basic setup common across the pages.
  */
 
+ #mainBody {
+   margin-top: 48px;
+ }
+
  #topPage {
     height: 400px;
     background-color: white;
@@ -14,13 +18,8 @@
  #topPageImg {
     width: 100%;
     height: 100%;
- }
-
- #topPageImg img {
-    width: 100%;
-    max-height: 100%;
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.4;
  }
 
  #title {
@@ -30,4 +29,7 @@
     transform: translate(-50%, -50%);
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 32px;
+    background-color: #000000AA;
+    color: white;
+    padding: 8px 32px;
 }

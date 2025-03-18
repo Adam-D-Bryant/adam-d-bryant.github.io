@@ -6,40 +6,106 @@
  */
 
 #navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     background-color: #f7f7f7;
     font-family: Verdana, Arial, Tahoma, Serif;
+    overflow: hidden;
+    z-index: 2;
+    height: 48px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #navbar-logo {
-    flex: 1;
-    justify-content: center;
+    display: block;
+    float: left;
     text-align: center;
+    padding: 14px 24px;
     text-decoration: none;
+    font-size: 17px;
     color: black;
 }
 
-.navbar-spacer { flex: 1; }
-
-#navbar-items {
-    flex: 3;
-    display: flex;
-    justify-content: center;
+#navbar-expand-button {
+    display: none;
+    float: right;
     text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    transition: rotate 0.2s;
+}
+
+#navbar-expand-button:hover {
+    cursor: pointer;
 }
 
 .navbar-item {
-    display: inline-block;
-    flex: 1;
-    height: 100%;
+    display: block;
+    float: right;
+    text-align: center;
+    padding: 14px 24px;
     text-decoration: none;
+    font-size: 17px;
     color: black;
-    background-color: #f7f7f7;
-    transition: 0.3s;
+    width: auto;
 }
 
-.navbar-item:hover {
-    background-color: #e7e7e7;
+.navbar-overlay-item {
+    display: block;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+#navbar-item-list {
+    display: block;
+}
+
+.navbar-overlay-class {
+    display: block;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-family: Verdana, Arial, Tahoma, Serif;
+    z-index: 1;
+    background-color: #f7f7f7;
+    height: 0px;
+    transition: height 0.2s;
+    overflow-y: hidden;
+
+}
+
+.navbar-item:hover, .navbar-overlay-item:hover {
+    background-color: #e8e8e8;
+}
+
+.navbar-overlay-class.expand {
+    height: 100%;
+}
+
+.navbar-expand-item-off {
+    rotate: 0deg;
+}
+
+.navbar-expand-item-on {
+    rotate: 90deg;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar-item-list {
+        display: none;
+    }
+    #navbar-expand-button {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .hide-on-big {
+        display: none;
+    }
 }
