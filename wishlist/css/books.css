@@ -1,0 +1,10 @@
+/*
+ * books.css
+ * 18/03/2025
+ *
+ * The CSS specific to the books.html file.
+ */
+
+#topPageImg {
+    background-image: URL("../images/books_background.jpg");
+}
