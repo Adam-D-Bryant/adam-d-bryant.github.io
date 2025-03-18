@@ -1,0 +1,45 @@
+/*
+ * navbar.css
+ * 18/03/2025
+ *
+ * All HTML pages will run this CSS file second. Handles the basic navbar styling.
+ */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f7f7f7;
+    font-family: Verdana, Arial, Tahoma, Serif;
+}
+
+#navbar-logo {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-spacer { flex: 1; }
+
+#navbar-items {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-item {
+    display: inline-block;
+    flex: 1;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    background-color: #f7f7f7;
+    transition: 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: #e7e7e7;
+}
