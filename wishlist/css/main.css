@@ -5,17 +5,17 @@
  * All HTML pages will run this CSS file third. Handles the basic setup common across the pages.
  */
 
- #mainBody {
+#mainBody {
    margin-top: 48px;
  }
 
- #topPage {
+#topPage {
     height: 400px;
     background-color: white;
     position: relative;
  }
 
- #topPageImg {
+#topPageImg {
     width: 100%;
     height: 100%;
     opacity: 0.4;
@@ -23,7 +23,7 @@
     background-position: center;
  }
 
- #title {
+#title {
     position: absolute;
     top: 50%;
     left: 50%;
