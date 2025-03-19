@@ -1,0 +1,10 @@
+/*
+ * clothes.css
+ * 19/03/2025
+ *
+ * The CSS specific to the clothes.html file.
+ */
+
+#topPageImg {
+    background-image: URL("../images/clothes_background.jpg");
+}

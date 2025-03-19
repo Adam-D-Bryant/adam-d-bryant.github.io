@@ -1,47 +1,128 @@
 /*
  * main.css
- * 18/03/2025
+ * 19/03/2025
  *
  * All HTML pages will run this CSS file third. Handles the basic setup common across the pages.
  */
 
 #mainBody {
-   margin-top: 48px;
- }
+   margin-top: 448px;
+}
 
 #topPage {
-    height: 400px;
-    background-color: white;
-    position: relative;
- }
+   width: 100%;
+   height: 400px;
+   background-color: white;
+   position: fixed;
+   z-index: -1;
+   top: 48px;
+}
 
 #topPageImg {
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    object-fit: cover;
-    background-position: center;
- }
+   width: 100%;
+   height: 100%;
+   opacity: 0.4;
+   background-position: center;
+}
 
 #title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 32px;
-    background-color: #000000AA;
-    color: white;
-    padding: 8px 32px;
-    text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: Verdana, Arial, Tahoma, Serif;
+   font-size: 32px;
+   background-color: #000000AA;
+   color: white;
+   padding: 8px 32px;
+   text-align: center;
 }
 
 #bottomPage {
    text-align: center;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
 }
 
-@media only screen and (max-width: 800px) {
-   #title{
-      width: 50%;
+.item {
+   flex: 1;
+   display: flex;
+   margin-top: 24px;
+   margin-bottom: 24px;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.item-image {
+   flex: 1;
+   padding: 0px 0px;
+   max-width: 40%;
+   text-align: center;
+}
+
+.item-image img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.item-desc {
+   flex: 1;
+   max-width: 40%;
+   align-self: flex-start;
+}
+
+.item-space {
+   flex: 1;
+}
+
+.item-title {
+   font-family: Verdana, Arial, Tahoma, Serif;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.item-info {
+   font-family: Verdana, Arial, Tahoma, Serif;
+   font-size: 16px;
+   margin: 0;
+}
+
+.item-border {
+   flex: 1;
+   border-top: 1px solid #CCCCCC;
+   margin: 0px;
+   margin-top: 24px;
+   margin-bottom: 24px;
+   width: 90%;
+   align-self: center;
+}
+
+.item-border:first-of-type {
+   margin-top: 48px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+   .item {
+      flex-direction: column;
+   }
+
+   .item-image {
+      max-width: 75%;
+   }
+
+   .item-border:first-of-type + .item {
+      margin-top: 48px;
+   }
+
+   .item-desc {
+      max-width: 90%;
+      margin-top: 24px;
+      align-self: center;
+   }
+
+   .item-border:first-of-type {
+      display: none;
    }
 }

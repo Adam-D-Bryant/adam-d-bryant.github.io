@@ -1,0 +1,10 @@
+/*
+ * misc.css
+ * 19/03/2025
+ *
+ * The CSS specific to the misc.html file.
+ */
+
+ #topPageImg {
+    background-image: URL("../images/misc_background.jpg");
+}

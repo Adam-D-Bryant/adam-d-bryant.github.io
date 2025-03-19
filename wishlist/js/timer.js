@@ -1,3 +1,10 @@
+/*
+ * timer.js
+ * 19/03/2025
+ *
+ * calculates and sets the timer (for the main page index.html)
+ */
+
 const birthdate = new Date(2025, 7, 28);
 var interval;
 

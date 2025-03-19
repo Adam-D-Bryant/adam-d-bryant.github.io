@@ -1,9 +1,13 @@
 /*
  * core.css
- * 18/03/2025
+ * 19/03/2025
  *
  * All HTML pages will run this CSS file first. Handles the basic (core) changes, mostly related to the <html> and <body> tags.
  */
 
 body { margin: 0; }
 html { height: 100%; }
+
+.disable-scroll {
+    overflow: hidden;
+}

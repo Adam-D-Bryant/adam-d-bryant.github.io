@@ -1,6 +1,6 @@
 /*
  * navbar.css
- * 18/03/2025
+ * 19/03/2025
  *
  * All HTML pages will run this CSS file second. Handles the basic navbar styling.
  */
@@ -9,11 +9,12 @@
     background-color: #f7f7f7;
     font-family: Verdana, Arial, Tahoma, Serif;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
     height: 48px;
     position: fixed;
     width: 100%;
     top: 0;
+    /*border-bottom: 1px solid black;*/
 }
 
 #navbar-logo {
@@ -24,6 +25,7 @@
     text-decoration: none;
     font-size: 17px;
     color: black;
+    transition: background-color 0.2s;
 }
 
 #navbar-expand-button {
@@ -34,11 +36,16 @@
     text-decoration: none;
     font-size: 17px;
     color: black;
+    transition: background-color 0.2s;
+}
+
+#navbar-expand-button i {
     transition: rotate 0.2s;
 }
 
 #navbar-expand-button:hover {
     cursor: pointer;
+    background-color: #e8e8e8;
 }
 
 .navbar-item {
@@ -50,6 +57,7 @@
     font-size: 17px;
     color: black;
     width: auto;
+    transition: background-color 0.2s;
 }
 
 .navbar-overlay-item {
@@ -59,6 +67,23 @@
     text-decoration: none;
     font-size: 17px;
     color: black;
+    transition: background-color 0.2s;
+}
+
+.navbar-overlay-border {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-overlay-border div {
+    flex: 0.9;
+    border-top: 1px solid #CCCCCC;
+}
+
+.navbar-overlay-border:first-of-type div {
+    flex: 1;
 }
 
 #navbar-item-list {
@@ -71,15 +96,15 @@
     text-align: center;
     width: 100%;
     font-family: Verdana, Arial, Tahoma, Serif;
-    z-index: 1;
+    z-index: 2;
     background-color: #f7f7f7;
     height: 0px;
     transition: height 0.2s;
     overflow-y: hidden;
-
+    top: 48px;
 }
 
-.navbar-item:hover, .navbar-overlay-item:hover {
+.navbar-item:hover, .navbar-overlay-item:hover, #navbar-logo:hover {
     background-color: #e8e8e8;
 }
 
@@ -87,11 +112,11 @@
     height: 100%;
 }
 
-.navbar-expand-item-off {
+.navbar-expand-item-off i {
     rotate: 0deg;
 }
 
-.navbar-expand-item-on {
+.navbar-expand-item-on i {
     rotate: 90deg;
 }
 
