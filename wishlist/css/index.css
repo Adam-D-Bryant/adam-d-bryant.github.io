@@ -60,6 +60,10 @@ body {
     align-items: center;
 }
 
+#navbar-overlay {
+    margin-top: 48px;
+}
+
 @media only screen and (max-width: 800px) {
     #timerArea {
         width: 100%;
