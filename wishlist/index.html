@@ -17,20 +17,20 @@
             <a id="navbar-logo" data-ng-click="updateContent('main')">CHRISTMAS WISHLIST 2025</a>
             <a id="navbar-expand-button" class="navbar-expand-item-off"><i class="fa fa-bars"></i></a>
             <div id="navbar-item-list">
-                <a class="navbar-item" data-ng-click="updateContent('misc')">Misc.</a>
-                <a class="navbar-item" data-ng-click="updateContent('games')">Games</a>
-                <a class="navbar-item" data-ng-click="updateContent('food')">Food</a>
-                <a class="navbar-item" data-ng-click="updateContent('clothes')">Clothes</a>
-                <a class="navbar-item" data-ng-click="updateContent('books')">Books</a>
+                <a class="navbar-item" data-ng-click="updateContent('misc')">MISC.</a>
+                <a class="navbar-item" data-ng-click="updateContent('games')">GAMES</a>
+                <a class="navbar-item" data-ng-click="updateContent('food')">FOOD</a>
+                <a class="navbar-item" data-ng-click="updateContent('clothes')">CLOTHES</a>
+                <a class="navbar-item" data-ng-click="updateContent('books')">BOOKS</a>
             </div>
         </div>
         <div id="navbar-overlay" class="navbar-overlay-class hide-on-big hide">
             <div class="navbar-overlay-border"><div></div></div>
-            <a class="navbar-overlay-item" data-ng-click="updateContent('books')">Books</a> <div class="navbar-overlay-border"><div></div></div>
-            <a class="navbar-overlay-item" data-ng-click="updateContent('clothes')">Clothes</a> <div class="navbar-overlay-border"><div></div></div>
-            <a class="navbar-overlay-item" data-ng-click="updateContent('food')">Food</a> <div class="navbar-overlay-border"><div></div></div>
-            <a class="navbar-overlay-item" data-ng-click="updateContent('games')">Games</a> <div class="navbar-overlay-border"><div></div></div>
-            <a class="navbar-overlay-item" data-ng-click="updateContent('misc')">Misc.</a> <div class="navbar-overlay-border"><div></div></div>
+            <a class="navbar-overlay-item" data-ng-click="updateContent('books')">BOOKS</a> <div class="navbar-overlay-border"><div></div></div>
+            <a class="navbar-overlay-item" data-ng-click="updateContent('clothes')">CLOTHES</a> <div class="navbar-overlay-border"><div></div></div>
+            <a class="navbar-overlay-item" data-ng-click="updateContent('food')">FOOD</a> <div class="navbar-overlay-border"><div></div></div>
+            <a class="navbar-overlay-item" data-ng-click="updateContent('games')">GAMES</a> <div class="navbar-overlay-border"><div></div></div>
+            <a class="navbar-overlay-item" data-ng-click="updateContent('misc')">MISC.</a> <div class="navbar-overlay-border"><div></div></div>
             <div class="navbar-overlay-border"><div></div></div>
         </div>
 
@@ -51,7 +51,7 @@
                             </div>
                             <div class="item-desc">
                                 <p class="item-title">{{i.title}}</p>
-                                <p class="item-info">{{i.description}}</p>
+                                <p class="item-info" ng-bind-html="trustAsHtml(i.description)"></p>
                             </div>
                         </div>
                     </div>
@@ -59,12 +59,24 @@
             </div>
             
             <div id="mainPage" style="display: {{mainPageDisplay}};">
-                <div id="mainPageImage" style="background-image: URL('images/home_background.jpg'); width: 100%; height: 100%;"></div>
-                <div id="mainTitle">CHRISTMAS 2025 WISHLIST</div>
-                <div id="subtitle">
-                    <p id="timer">
-                        <span id="timerD">[Loading...]</span><span id="timerDExtra"></span><span id="timerH"></span><span id="timerHExtra"></span><span id="timerM"></span><span id="timerMExtra"></span><span id="timerS"></span><span id="timerSExtra"></span>
-                    </p>
+                <div id="mainPageImage"></div>
+                <div id="mainTitle">CHRISTMAS WISHLIST 2025</div>
+                <div id="timerArea">
+                    <div class="timerSection" id="timerD">
+                        <p class="timerVal" id="timerDVal">0</p><p>DAYS</p>
+                    </div>
+                    <div class="timerSection" id="timerH">
+                        <p class="timerVal" id="timerHVal">0</p><p>HOURS</p>
+                    </div>
+                    <div class="timerSection" id="timerM">
+                        <p class="timerVal" id="timerMVal">0</p><p>MINS</p>
+                    </div>
+                    <div class="timerSection" id="timerS">
+                        <p class="timerVal" id="timerSVal">0</p><p>SECS</p>
+                    </div>
+                    <div class="timerSection hideTimerSection" id="timerHB">
+                        <div class="timerVal" id="timerHBVal"><p>MERRY CHRISTMAS!</p></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,37 +90,6 @@
         <script src="./data/food.js"></script>
         <script src="./data/games.js"></script>
         <script src="./data/misc.js"></script>
-
-        <script>
-            let app = angular.module('mainApp', []);
-            app.controller('mainController', function($scope) {
-                $scope.pageTitle = allData["main"].page.title;
-                $scope.pageBackground = allData["main"].page.backgroundFileName;
-                $scope.items = allData["main"].items;
-                $scope.topPageDetails = [{}]
-                $scope.mainAreaDisplay = "none";
-                $scope.mainPageDisplay = "block";
-
-                $scope.updateContent = function(s) {
-                    if ($scope.pageTitle == allData[s].page.title) return;
-
-                    if (s == "main") {
-                        $scope.pageTitle = allData[s].page.title;
-                        $scope.pageBackground = allData[s].page.backgroundFileName;
-                        $scope.items = [{}]
-                        $scope.topPageDetails = [{}]
-                        $scope.mainAreaDisplay = "none";
-                        $scope.mainPageDisplay = "block";
-                        return;
-                    }
-                    $scope.mainAreaDisplay = "block";
-                    $scope.mainPageDisplay = "none";
-                    $scope.pageTitle = allData[s].page.title;
-                    $scope.pageBackground = allData[s].page.backgroundFileName;
-                    $scope.items = allData[s].items;
-                    $scope.topPageDetails = [{}]
-                }
-            });
-        </script>
+        <script src="./js/angular.js"></script>
     </body>
 </html>

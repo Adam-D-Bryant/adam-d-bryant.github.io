@@ -1,6 +1,6 @@
 pageData = {
-    "title": "CHRISTMAS 2025",
-    "backgroundFileName": "home_background.jpg"
+    "title": "",
+    "backgroundFileName": ""
 };
 itemData = [{}];
 

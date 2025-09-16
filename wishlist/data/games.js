@@ -1,19 +1,14 @@
 pageData = {
     "title": "GAMES",
-    "backgroundFileName": "games_background.jpg"
+    "backgroundFileName": "./backgrounds/games_background.jpg"
 };
 itemData = [
     {
-        "title": "TEST",
-        "imageFileName": "books_dracula.jpg",
-        "imageAlt": "TEST_ALT",
-        "description": "Lorem ipsum."
-    },
-    {
-        "title": "TEST 2",
-        "imageFileName": "books_dracula.jpg",
-        "imageAlt": "TEST_ALT_2",
-        "description": "Lorem ipsum 2."
+        "title": "GO",
+        "imageFileName": "./games/games_go.jpg",
+        "imageAlt": "Go",
+        "description": `A classic 2-player Chinese game where you try to capture more territory than your opponent. 
+        They come in various sizes, but either a 19x19 or 13x13 board would be preferred (ideally 19x19).`
     }
 ];
 

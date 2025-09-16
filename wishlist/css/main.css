@@ -1,9 +1,11 @@
 /*
- * main.css
- * 19/03/2025
- *
- * All HTML pages will run this CSS file third. Handles the basic setup common across the pages.
+ * Core css file for basically everything.
  */
+
+@font-face {
+  font-family: ChristmasFont;
+  src: URL("../fonts/Eastern\ Diamond.otf");
+}
 
 #mainBody {
    margin-top: 448px;
@@ -22,6 +24,7 @@
    top: 48px;
    background-position: center;
    opacity: 0.4;
+   background-image: URL('../images/backgrounds/home_background.jpg');
 }
 
 #topPage {
@@ -45,7 +48,7 @@
    top: 25%;
    left: 50%;
 
-   font-family: Verdana, Arial, Tahoma, Serif;
+   font-family: ChristmasFont, Verdana, Arial, Tahoma, Serif;
    font-size: 32px;
    background-color: #000000AA;
    color: white;
@@ -64,7 +67,7 @@
    top: 50%;
    left: 50%;
 
-   font-family: Verdana, Arial, Tahoma, Serif;
+   font-family: ChristmasFont, Verdana, Arial, Tahoma, Serif;
    font-size: 32px;
    background-color: #000000AA;
    color: white;
@@ -168,37 +171,61 @@
 
 /* */
 
-/*
- * base.css
- * Ver: 24.04.19
- * Contains the main css formatting for item pages. All HTML pages load this css file third.
- */
-
-#subtitle {
-    background-color: rgba(255,255,255,0.2);
-    height: 196px;
+#timerArea {
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
-}
-
-#subtitle p {
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#subtitle-white p {
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#subtitle, #subtitle-white {
+    width: 50%;
     text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    opacity: 0;
+   -webkit-animation: fade 0.5s forwards;
+   animation: fade 0.5s forwards;
+}
+
+.timerSection {
+    flex-direction: column;
+    background-color: #000000AA;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Arial, Tahoma, Serif;
+}
+
+.timerSection p {
+    flex: 1;
+}
+
+.hideTimerSection {
+    display: none;
+}
+
+#timerHB {
+    flex: 1;
+}
+
+#timerHBVal {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #timerArea {
+        width: 100%;
+    }
+
+    #timerHB {
+        flex: 0.5;
+    }
+
+    #mainTitle {
+         width: 50%;
+    }
 }
 
 
