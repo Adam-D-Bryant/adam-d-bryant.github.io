@@ -5,7 +5,7 @@
  * calculates and sets the timer (for the main page index.html)
  */
 
-const birthdate = new Date(2025, 7, 28);
+const birthdate = new Date(2025, 11, 25);
 var interval;
 
 function refreshTimer() {
@@ -13,11 +13,14 @@ function refreshTimer() {
     var diff = birthdate - now;
 
     if (diff < 0) {
-        document.getElementById("timerHB").classList.remove("hideTimerSection");
+        //document.getElementById("timerHB").classList.remove("hideTimerSection");
         document.getElementById("timerD").classList.add("hideTimerSection");
         document.getElementById("timerH").classList.add("hideTimerSection");
         document.getElementById("timerM").classList.add("hideTimerSection");
         document.getElementById("timerS").classList.add("hideTimerSection");
+
+        document.getElementById("timerD").innerHTML = "MERRY CHRISTMAS!";
+
         clearInterval(interval);
         return;
     }
@@ -32,10 +35,10 @@ function refreshTimer() {
     var hourText = `${hour<10?"0":""}${hour}`;
     var dayText = `${day<10?"0":""}${day}`;
 
-    document.getElementById("timerDVal").innerHTML = `${dayText}`;
-    document.getElementById("timerHVal").innerHTML = `${hourText}`;
-    document.getElementById("timerMVal").innerHTML = `${minText}`;
-    document.getElementById("timerSVal").innerHTML = `${secText}`;
+    document.getElementById("timerD").innerHTML = `${dayText}`;
+    document.getElementById("timerH").innerHTML = `${hourText}`;
+    document.getElementById("timerM").innerHTML = `${minText}`;
+    document.getElementById("timerS").innerHTML = `${secText}`;
 }
 
 interval = setInterval(refreshTimer, 1000);

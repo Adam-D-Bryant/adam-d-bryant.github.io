@@ -61,12 +61,17 @@
             <div id="mainPage" style="display: {{mainPageDisplay}};">
                 <div id="mainPageImage" style="background-image: URL('images/home_background.jpg'); width: 100%; height: 100%;"></div>
                 <div id="mainTitle">CHRISTMAS 2025 WISHLIST</div>
-                <div id="timer"></div>
+                <div id="subtitle">
+                    <p id="timer">
+                        <span id="timerD">[Loading...]</span><span id="timerDExtra"></span><span id="timerH"></span><span id="timerHExtra"></span><span id="timerM"></span><span id="timerMExtra"></span><span id="timerS"></span><span id="timerSExtra"></span>
+                    </p>
+                </div>
             </div>
         </div>
 
         <script> let allData = {}; </script>
         <script src="./js/navbar.js"></script>
+        <script src="./js/timer.js"></script>
         <script src="./data/main.js"></script>
         <script src="./data/books.js"></script>
         <script src="./data/clothes.js"></script>
