@@ -26,6 +26,16 @@ itemData = [
         "imageFileName": "./misc/misc_xenobladeamiibo.jpg",
         "imageAlt": "Xenoblade Chronicles Amiibo",
         "description": "Amiibo for the game Xenoblade Chronicles 3!"
+    },
+    {
+        "title": "BLACK VICTORIAN FLOURISH HUNTER FOB POCKET WATCH",
+        "imageFileName": "./misc/pocketwatch.jpg",
+        "imageAlt": "Pocket Watch",
+        "description": `
+        A pocket watch from Fob and Co! This one is the "Black Victorian Flourish Hunter Fob Watch" for about $120, featuring blue roman numerals 
+        and a hollow center which reveals the inner-working gold-plated gears!
+        <br/><br/>
+        <a href="https://www.fobandco.com.au/shop/black-victorian-flourish-hunter-fob-watch/" target="_blank" class="item-link">Link Here</a>`
     }
 ];
 

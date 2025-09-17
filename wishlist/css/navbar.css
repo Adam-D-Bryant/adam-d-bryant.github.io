@@ -1,7 +1,5 @@
 /*
- * Handles the basic navbar styling.
-
- #f7f7f7
+ * CSS for the navigation bar at the top.
  */
 
 #navbar {
@@ -37,14 +35,13 @@
     font-size: 17px;
     color: black;
     transition: background-color 0.2s;
+    cursor: pointer;
+    height: 100%;
 }
 
-#navbar-expand-button i {
-    transition: rotate 0.2s;
-}
+#navbar-expand-button i { transition: rotate 0.2s; }
 
 #navbar-expand-button:hover {
-    cursor: pointer;
     background-color: #4e4e4e;
     color: white;
 }
@@ -63,6 +60,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar-overlay-item {
@@ -73,6 +71,8 @@
     font-size: 17px;
     color: black;
     transition: background-color 0.2s;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .navbar-overlay-border {
@@ -87,9 +87,7 @@
     border-top: 1px solid #CCCCCC;
 }
 
-.navbar-overlay-border:first-of-type div {
-    flex: 1;
-}
+.navbar-overlay-border:first-of-type div { flex: 1; }
 
 #navbar-item-list {
     display: block;
@@ -115,37 +113,15 @@
     color: white;
 }
 
-.navbar-overlay-class.expand {
-    height: 100%;
+.navbar-overlay-class.expand { height: 100%; }
+.navbar-expand-item-off i { rotate: 0deg; }
+.navbar-expand-item-on i { rotate: 90deg; }
+
+@media only screen and (max-width: 864px) {
+    #navbar-item-list { display: none; }
+    #navbar-expand-button { display: inline-block; }
 }
 
-.navbar-expand-item-off i {
-    rotate: 0deg;
-}
-
-.navbar-expand-item-on i {
-    rotate: 90deg;
-}
-
-.navbar-item {
-    cursor: pointer;
-}
-
-.navbar-overlay-item {
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 800px) {
-    #navbar-item-list {
-        display: none;
-    }
-    #navbar-expand-button {
-        display: inline-block;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .hide-on-big {
-        display: none;
-    }
+@media only screen and (min-width: 864px) {
+    .hide-on-big { display: none; }
 }

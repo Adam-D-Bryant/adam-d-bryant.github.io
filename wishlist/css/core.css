@@ -1,7 +1,19 @@
 /*
- * Fixes some annoying issues with HTML/body tags, along with overflow scrolling.
+ * Fixes some annoying issues with HTML/body tags, along with overflow scrolling, and adds some "constants" like
+ * animations and fonts.
  */
 
 body { margin: 0; }
 html { height: 100%; }
 .disable-scroll { overflow: hidden; }
+
+@font-face {
+  font-family: ChristmasFont;
+  src: URL("../fonts/Eastern\ Diamond.otf");
+}
+
+@-webkit-keyframes slideLeft { 100% { transform: translateX(0); opacity: 100%; } }
+@keyframes slideLeft { 100% { transform: translateX(0); opacity: 100%; } }
+
+@-webkit-keyframes fade { 100% { transform: translate(-50%, -50%); opacity: 100%; } }
+@keyframes fade { 100% { transform: translate(-50%, -50%); opacity: 100%; } }

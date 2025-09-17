@@ -1,0 +1,93 @@
+/*
+ * CSS for the item pages (pages which show the items).
+ */
+
+#mainBody { margin-top: 448px; }
+
+.item {
+   flex: 1;
+   display: flex;
+   margin-top: 24px;
+   margin-bottom: 24px;
+   justify-content: space-evenly;
+   align-items: center;
+   opacity: 0;
+   -webkit-animation: slideLeft 0.5s forwards;
+   animation: slideLeft 0.5s forwards;
+   transform: translateX(-10%);
+}
+
+.item-image {
+   flex: 1;
+   padding: 0px 0px;
+   max-width: 40%;
+   text-align: center;
+}
+
+.item-image img {
+   max-width: 100%;
+   max-height: 500px;
+}
+
+.item-desc {
+   flex: 1;
+   max-width: 40%;
+   align-self: flex-start;
+}
+
+.item-link {
+   color:#0060df;
+}
+
+.item-space { flex: 1; }
+
+.item-title {
+   font-family: Verdana, Arial, Tahoma, Serif;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.item-info {
+   font-family: Verdana, Arial, Tahoma, Serif;
+   font-size: 16px;
+   margin: 0;
+}
+
+.item-border {
+   flex: 1;
+   border-top: 1px solid #CCCCCC;
+   margin: 0px;
+   margin-top: 24px;
+   margin-bottom: 24px;
+   width: 90%;
+   align-self: center;
+}
+
+.item-border:first-of-type { margin-top: 48px; }
+
+.item-desc li {
+   font-family: Verdana, Arial, Tahoma, Serif;
+   font-size: 16px;
+   list-style: none;
+}
+
+.item-desc a { color: #0060df; }
+
+.item:last-of-type { margin-bottom: 48px; }
+
+@media only screen and (max-width: 1024px) {
+
+   .item { flex-direction: column; }
+
+   .item-image { max-width: 75%; }
+
+   /*.item-border:first-of-type + .item { margin-top: 48px; }*/
+
+   .item-desc {
+      max-width: 90%;
+      margin-top: 24px;
+      align-self: center;
+   }
+
+   /*.item-border:first-of-type { display: none; }*/
+}
