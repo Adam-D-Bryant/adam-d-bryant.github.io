@@ -19,13 +19,13 @@ itemData = [
     {
         "title": "PIKMIN 1+2 (SWITCH)",
         "imageFileName": "./games/pikmin12.jpg",
-        "imageAlt": "Wit's End",
+        "imageAlt": "Pikmin 1+2",
         "description": `2 classic GameCube games brought to the Switch! Play as Captain Olimar and a capable cast of red, blue, and yellow Pikmin on a dire mission across a larger-than-life planet. You must guide your loveably leafy companions through obstacles, in battle, and when collecting missing ship parts. Your oxygen will only last 30 days, but the Pikmin provide a glimmer of hope that you may make it home.`
     },
     {
         "title": "PIKMIN 3 DELUXE (SWITCH)",
         "imageFileName": "./games/pikmin3.jpg",
-        "imageAlt": "Wit's End",
+        "imageAlt": "Pikmin 3 Deluxe",
         "description": `Originally a Wii U game, Pikmin 3 Deluxe lets you traverse a strange world and save your planet, command a capable crop of 5 different types of Pikmin to strategically overcome obstacles, defeat creatures, and find food for your famished home planet!`
     }
 ];

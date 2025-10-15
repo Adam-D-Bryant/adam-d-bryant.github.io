@@ -17,7 +17,15 @@ itemData = [
         Japanese characters.
         <br/><br/>
         <a href="https://www.redbubble.com/i/t-shirt/Xenoblade-Monado-by-FlameTorchic/11734405.FB110" target="_blank" class="item-link">Link Here (Redbubble)</a>`
-    }
+    },
+    {
+        "title": "COFFEE GREAT WAVE SHIRT",
+        "imageFileName": "./clothes/coffeeGreatWave.jpg",
+        "imageAlt": "Coffee Great Wave Shirt",
+        "description": `The Japanese on the left means "Coffee Great Wave".
+        <br/><br/>
+        <a href="https://www.redbubble.com/i/t-shirt/The-Great-Wave-of-Coffee-Active-by-edgarlinton/146803766.IJ6L0" target="_blank" class="item-link">Link Here (Redbubble)</a>`
+    },
 ];
 
 allData["clothes"] = {

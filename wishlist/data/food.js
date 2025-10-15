@@ -38,8 +38,12 @@ itemData = [
         <li>Cinnamon Roll (Beans)</li>
         <li>Saint Louis Gooey Butter Cake (Cold Brew)</li>
         <li>Dark Chocolate Salted Caramel (Cold Brew)</li>
-        <br/>
-        I also wouldn't mind trying their milk tea or charged refreshers (basically caffeinated - but non-coffee - drinks).`
+        <br/><br/>
+        I also wouldn't mind trying their charged refreshers (basically caffeinated - but non-coffee - drinks). Interesting examples include:
+        <br/><br/>
+        <li>Miami Vice</li>
+        <li>Sour Watermelon</li>
+        <li>Blackberry Maji Dragonfruit</li>`
     }
 ];
 
