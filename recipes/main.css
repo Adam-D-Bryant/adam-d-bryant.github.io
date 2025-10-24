@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    background-color: #EEEEEE;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+#ingredientArea,
+#equipmentArea {
+    margin-left: 16px;
+}
+
+#title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#image {
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.table tr td {
+    padding-left: 8px;
+    padding-right: 32px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(241, 242, 242);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #c3ebeb;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#detailsArea {
+    display: flex;
+    margin-top: 16px;
+}
+
+#leftArea {
+    flex: 1;
+}
+
+#methodArea {
+    flex: 3;
+}
+
+#description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tabelLabel {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#methodInstructions {
+    margin-top: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ingredientArea,
+#equipmentArea {
+    margin-top: 16px;
+}
+
+#infoArea {
+    background-color: #DDDDDD;
+    margin: 0px;
+}
+
+#titleText {
+    margin: 0px;
+    padding-top: 8px;
+}
+
+#description {
+    padding-bottom: 8px;
+}
+
+#title,
+#description {
+    margin-left: 16px;
+}
+
+#methodArea {
+    margin-left: 16px;
+}
+
+#methodInstructions {
+    padding-right: 16px;
+}
+
+#imageContainer {
+    max-width: 100%;
+    margin-left: 16px;
+}
+
+.table:last-of-type {
+    margin-bottom: 16px;
+}
+
+.highlight_ingr {
+    color: rgb(13, 0, 255);
+    font-weight: bold;
+}
+
+.highlight_temp {
+    color: rgb(255, 77, 0);
+    font-weight: bold;
+}
+
+.highlight_thermo {
+    color: rgb(15, 149, 0);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    #detailsArea {
+        flex-direction: column;
+    }
+
+    #equipmentArea,
+    #ingredientArea {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #methodArea {
+        margin-top: 32px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #image {
+        margin-left: 0px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .table,
+    #methodInstructions {
+        text-align: left;
+    }
+
+    .table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    #imageContainer {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #image {
+        max-width: 75%;
+    }
+
+    td {
+        padding-right: 0px;
+    }
+
+    th {
+        padding-left: 8px;
+    }
+
+    .table:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #ingredientArea,
+    #equipmentArea {
+        margin-top: 32px;
+    }
+}
