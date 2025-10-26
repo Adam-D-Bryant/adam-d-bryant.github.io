@@ -28,14 +28,16 @@ itemData = [
         "description": "Amiibo for the game Xenoblade Chronicles 3!"
     },
     {
-        "title": "BLACK VICTORIAN FLOURISH HUNTER FOB POCKET WATCH",
+        "title": "BLACK SUNSPEAR DEMI HUNTER FOB WATCH",
         "imageFileName": "./misc/pocketwatch.jpg",
         "imageAlt": "Pocket Watch",
         "description": `
-        A pocket watch from Fob and Co! This one is the "Black Victorian Flourish Hunter Fob Watch" for about $120, featuring blue roman numerals 
-        and a hollow center which reveals the inner-working gold-plated gears!
+        A pocket watch from Fob and Co! This one is the "Black Sunspear Demi Hunter Fob Watch" for about $99. The site states: "This Apollo themed timepiece 
+        features a flourished front frame embossed with sun with wave patterns and highlighted with the sneak peek of the spear-like silver hand and the 
+        golden skeleton. Inside, it exhibits a black ring to match with the golden roman numerals and innerworks. In rearview, it offers lavish floral 
+        waves and a window for more view for the golden skeleton."
         <br/><br/>
-        <a href="https://www.fobandco.com.au/shop/black-victorian-flourish-hunter-fob-watch/" target="_blank" class="item-link">Link Here</a>`
+        <a href="https://www.fobandco.com.au/shop/black-sunspear-demi-hunter-fob-watch/" target="_blank" class="item-link">Link Here</a>`
     }
 ];
 
