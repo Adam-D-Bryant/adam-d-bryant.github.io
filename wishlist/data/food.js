@@ -44,6 +44,12 @@ itemData = [
         <li>Miami Vice</li>
         <li>Sour Watermelon</li>
         <li>Blackberry Maji Dragonfruit</li>`
+    },
+    {
+        "title": "MOCKTAIL MIXERS",
+        "imageFileName": "./food/mocktailMixers.jpg",
+        "imageAlt": "Mocktail Mixers",
+        "description": `Flavoured non-alcoholic mixers for mocktails! Any flavour really.`
     }
 ];
 

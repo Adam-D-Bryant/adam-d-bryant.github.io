@@ -38,6 +38,18 @@ itemData = [
         waves and a window for more view for the golden skeleton."
         <br/><br/>
         <a href="https://www.fobandco.com.au/shop/black-sunspear-demi-hunter-fob-watch/" target="_blank" class="item-link">Link Here</a>`
+    },
+    {
+        "title": "COCKTAIL SET HOLDER",
+        "imageFileName": "./misc/cocktailHolder.jpg",
+        "imageAlt": "Cocktail Holder",
+        "description": `A general holder for my mocktail utensil set (we already have the actual utensils, but a holder for them all would be nice)! Not necessarily this exact model.`
+    },
+    {
+        "title": "METAL MARTINI PICKS",
+        "imageFileName": "./misc/metalMartiniPicks.jpg",
+        "imageAlt": "Metal Martini Picks",
+        "description": `Re-usable metal martini picks to pierce fruit and whatnot for mocktails!`
     }
 ];
 
