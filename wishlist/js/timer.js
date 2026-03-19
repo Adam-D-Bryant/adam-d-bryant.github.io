@@ -4,12 +4,12 @@
  * Calculates and sets the timer (for the main page index.html).
  */
 
-const christmasDate = new Date(2025, 11, 25);
+const birthdayDate = new Date(2026, 7, 28);
 var interval;
 
 function refreshTimer() {
     var now = new Date();
-    var diff = christmasDate - now;
+    var diff = birthdayDate - now;
 
     if (diff < 0) {
         document.getElementById("timerHB").classList.remove("hideTimerSection");

@@ -29,21 +29,17 @@ itemData = [
     },
     {
         "title": "COFFEE",
-        "imageFileName": "./food/food_madrinas.jpg",
+        "imageFileName": "./food/food_madrinas.png",
         "imageAlt": "Coffee",
         "description": `
         Coffee! Cold brew or full beans! For Madrinas' coffee, I'd be interested in trying:
         <br/><br/>
-        <li>Salted Caramel (Beans)</li>
-        <li>Cinnamon Roll (Beans)</li>
-        <li>Saint Louis Gooey Butter Cake (Cold Brew)</li>
-        <li>Dark Chocolate Salted Caramel (Cold Brew)</li>
-        <br/><br/>
-        I also wouldn't mind trying their charged refreshers (basically caffeinated - but non-coffee - drinks). Interesting examples include:
-        <br/><br/>
-        <li>Miami Vice</li>
-        <li>Sour Watermelon</li>
-        <li>Blackberry Maji Dragonfruit</li>`
+        <li>Midnight Sky (Beans)</li>
+        <li>Chocolate Peanut Butter (Cold Brew)</li>
+        <li>New York Cheesecake (Cold Brew)</li>
+        <li>Gourmet French Toast (Cold Brew)</li>
+        <li>Depresso Chocolate Espresso (Cold Brew)</li>
+        <li>Triple Chocolate Cake (Cold Brew)</li>`
     },
     {
         "title": "MOCKTAIL MIXERS",

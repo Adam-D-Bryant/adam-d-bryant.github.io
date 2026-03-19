@@ -3,7 +3,7 @@
  */
 
 #navbar {
-    background: linear-gradient(90deg,rgb(255, 106, 106) 5%, white 25% 75%, rgb(113, 255, 168) 95%);
+    background: linear-gradient(90deg,#0c77f9 5%, white 25% 75%, #ff4d4d 95%);
     font-family: Verdana, Arial, Tahoma, Serif;
     overflow: hidden;
     z-index: 3;

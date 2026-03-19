@@ -35,23 +35,10 @@ itemData = [
         join this elite corps immediately, he is befriended by three of the most formidable musketeers of the age: Athos, Porthos and Aramis, "the three musketeers" or "the three inseparables", and becomes involved in affairs of state and at court.`
     },
     {
-        "title": "HP LOVECRAFT COLLECTION",
-        "imageFileName": "./books/hpLovecraft.jpg",
-        "imageAlt": "HP Lovecraft Collection",
-        "description": `By: HP Lovecraft<br/><br/>Not necessarily this exact book, but just a book that covers all of HP Lovecraft's stories!`
-    },
-    {
         "title": "AESOP'S FABLES COLLECTION",
         "imageFileName": "./books/aesopFables.jpg",
         "imageAlt": "Aesop's Fables Collection",
         "description": `By: Aesop<br/><br/>Not necessarily this exact book, but just a book that covers all of Aesop's fables!`
-    },
-    {
-        "title": "SHERLOCK HOLMES COLLECTION",
-        "imageFileName": "./books/sherlockHolmesCollection.jpg",
-        "imageAlt": "Sherlock Holmes Collection",
-        "description": `By: Arthur Conan Doyle<br/><br/>Not necessarily this exact book, but just a book that covers all of the Sherlock Holmes stories! Originally they
-        were split across 4 novels and 56 short stories, so a single book which covers them all would be nice!`
     }
 ];
 
