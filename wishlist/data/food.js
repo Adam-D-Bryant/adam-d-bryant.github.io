@@ -35,6 +35,7 @@ itemData = [
         Coffee! Cold brew or full beans! For Madrinas' coffee, I'd be interested in trying:
         <br/><br/>
         <li>Midnight Sky (Beans)</li>
+        <li>S'mores (Cold Brew)</li>
         <li>Chocolate Peanut Butter (Cold Brew)</li>
         <li>New York Cheesecake (Cold Brew)</li>
         <li>Gourmet French Toast (Cold Brew)</li>
