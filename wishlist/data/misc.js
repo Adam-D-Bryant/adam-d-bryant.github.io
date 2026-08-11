@@ -32,6 +32,12 @@ itemData = [
         "imageFileName": "./misc/metalMartiniPicks.jpg",
         "imageAlt": "Metal Martini Picks",
         "description": `Re-usable metal martini picks to pierce fruit and whatnot for mocktails!`
+    },
+    {
+        "title": "LAVA LAMP",
+        "imageFileName": "./misc/misc_lavaLamp.jpg",
+        "imageAlt": "Lava Lamp",
+        "description": `Another lava lamp to replace my old one!`
     }
 ];
 
